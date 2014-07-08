@@ -8,9 +8,11 @@ The data is a collaboration of all interested in analyzing opinion polls. The da
 - [pollofpolls.se](http://pollofpolls.se/poll-of-polls/)
 - [trefyranio.se](http://trefyranio.com/)
 
-This collaboration is a part of [ropengov](http://ropengov.github.io/).
+This collaboration is a part of [rOpenGov](http://ropengov.github.io/).
 
 ### Data description
+
+The file contains the following variables.
 
 Variable      | Description
 ------------- | -------------
@@ -25,10 +27,10 @@ collectPeriodTo	| End date of data collection
 approxPeriod | Indicator if the period is known or if it is an approximation of the period
 house | The latest companyname (if the name has been changed)
 
-The value ```r NA```` follows the R standard and means missing value. 
+The value ```r NA``` follows the R standard and means missing value. 
 
 ### If you spot any faults or want to contribute...
-If you spot any errors or want to contribute, fork the repository and  feel free to send me a merge request with your suggested corrections and/or additions or just drop an issue.
+If you spot any errors or want to contribute, fork the repository and  feel free to send me a merge request with your suggested corrections and/or additions or just drop an issue in the repository.
 
 ### To download the file direct into R
 To download this file directly to R just use the following commands and you are good to go:
