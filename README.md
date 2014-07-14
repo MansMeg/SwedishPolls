@@ -29,11 +29,11 @@ house | The latest companyname (if the name has been changed)
 
 The value ```NA``` follows the R standard and means missing value. 
 
-There are two files. Polls.csv and OldPolls.csv. The file Polls contains polls from 1995 - and OldPolls contains data up to (and including 1994). The same variables are used (except actual parties).
+There are two files. ```Polls.csv``` and ```OldPolls.csv```. The file ```Polls.csv``` contains polls from 1995 - and ```OldPolls.csv``` contains data up to (and including) 1994. The same variables are used (except actual parties).
 
 ### Quality of the data
 In the earlier data the quality of the data is of less good quality (more ```NA```:s in sample size and collection period). Before 2000 only sifo is currently added. 
-Data from 2008 are of better quality (less ```NA````). 
+Data from 2008 are of better quality (less ```NA```). 
 
 ### If you spot any faults or want to contribute...
 If you spot any errors or want to contribute (reduce the missing data), fork the repository and feel free to send me a merge request with your suggested corrections and/or additions or just drop an issue in the repository.
