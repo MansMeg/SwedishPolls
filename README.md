@@ -36,10 +36,10 @@ In the earlier data the quality of the data is of less good quality (more ```NA`
 Data from 2008 are of better quality (less ```NA```). 
 
 ### If you spot any faults or want to contribute...
-If you spot any errors or want to contribute (reduce the missing data), fork the repository and feel free to send me a merge request with your suggested corrections and/or additions or just drop an issue in the repository.
+Just fork the repository and feel free to send me a merge request with your suggested corrections and/or additions. You can also just drop an issue in the repository.
 
 ### To use the data
-If you just want to download the csv-file as is you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, just click "Raw".
+If you just want to download the raw csv-file as is you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, just click "Raw".
 
 Below there are code to read the data directly into different statistical software.
 
