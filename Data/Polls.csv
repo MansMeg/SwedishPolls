@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,Fi,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2014-jul,Novus,22.4,6.1,5.8,4.2,31.8,7.3,9.9,8.8,2.6,16.4,2001,2014-08-07,2014-07-07,2014-08-03,FALSE,Novus
 2014-jul,Sentio Research,20.8,6.1,3.7,5.5,29.9,8.5,8.3,13.5,NA,13,1043,2014-07-16,2014-07-10,2014-07-16,FALSE,Sentio
 2014-jul,Demoskop,19.4,6.5,4.5,4.2,31.5,7.2,13.6,9.2,2.8,15.9,1250,2014-07-04,2014-06-24,2014-07-02,FALSE,Demoskop
 2014-jul,United Minds,22.8,5,4.8,4.4,28,7.5,11.9,10.5,4.0,12.4,1159,2014-07-02,2014-06-09,2014-06-30,FALSE,United Minds
