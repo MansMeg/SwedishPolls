@@ -47,7 +47,7 @@ Below there are code to read the data directly into different statistical softwa
 To download this file directly to R just use the following commands and you are good to go:
 
 ```r 
-library(devtools)
-source_gist(id = "https://gist.github.com/MansMeg/c0527fd762580006daed", quiet=TRUE)
-polls <- source_GitHubData(url = "https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv", sep = ",", dec = ".", header = TRUE)
+library(repmis)
+data_url <- "https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv"
+polls <- repmis::source_data(data_url, sep = ",", dec = ".", header = TRUE)
 ```
