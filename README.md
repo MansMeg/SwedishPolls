@@ -47,6 +47,7 @@ Below there are code to read the data directly into different statistical softwa
 To download this file directly to R just use the following commands and you are good to go:
 
 ```r 
+install.packages("repmis")
 library(repmis)
 data_url <- "https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv"
 polls <- repmis::source_data(data_url, sep = ",", dec = ".", header = TRUE)
