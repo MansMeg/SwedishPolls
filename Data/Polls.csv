@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,Fi,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2014-aug,United Minds,20.8,7.9,5.6,4.6,29.7,6.9,9.9,10.9,2.3,10.3,1253,2014-08-18,2014-08-10,2014-08-17,FALSE,United Minds
 2014-aug,Sifo,24.6,6.7,3.8,3.4,30.3,7.9,11.1,10.1,2,NA,1254,2014-08-16,2014-08-11,2014-08-14,FALSE,Sifo
 2014-aug,United Minds,19.8,7.5,5.2,4.3,29.6,7.2,9.8,11.6,2.9,11.5,1272,2014-08-11,2014-08-03,2014-08-10,FALSE,United Minds
 2014-aug,YouGov,23.4,6,5.2,5,30.3,6.6,9.4,9.3,3.6,NA,1781,2014-08-10,2014-07-02,2014-08-05,FALSE,YouGov
