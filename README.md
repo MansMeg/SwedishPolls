@@ -4,7 +4,7 @@ Swedish polls
 This is a short description of the file Polls.csv. The file contains all polls conducted in Sweden regarding political sympathies. The file originated from [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) but has been updated and variables added.
 
 The data is a collaboration of all interested in analyzing opinion polls. The data is open for anyone to use. The following are using this data today:
-- [Botten Ada](bottenada.se)
+- [Botten Ada](http://bottenada.se)
 - [pollofpolls.se](http://pollofpolls.se/poll-of-polls/)
 - [trefyranio.se](http://trefyranio.com/)
 
