@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2014-aug,Demoskop,22.2,5.1,4.6,5,30.7,7.2,10.6,10.8,2.5,NA,1000,2014-09-05,2014-09-02,2014-08-05,FALSE,Demoskop
 2014-sep,Novus,22.3,5.4,5.1,5.3,32.2,7.4,8.4,10.2,2.5,13.7,1628,2014-09-04,2014-08-29,2014-09-02,FALSE,Novus
 2014-aug,Ipsos,21.7,6.3,4.4,4.5,29.7,7.4,11,9.7,4,14.6,1463,2014-09-04,2014-08-22,2014-09-01,FALSE,Ipsos
 2014-sep,Novus,23.3,6.4,5.3,4.4,30.2,7.1,9.6,10.6,2.1,13.7,2183,2014-09-01,2014-08-25,2014-08-31,FALSE,Novus
