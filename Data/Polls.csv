@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2014-okt,Sentio,25.1,5.1,5.1,2.8,27.3,5.2,6.9,16.7,2.9,NA,1042,2014-10-14,2014-10-02,2014-10-08,FALSE,Sentio
 2014-okt,Demoskop,24.1,5.5,5.8,3.9,30.3,6.0,8.1,13.3,2.1,NA,1250,2014-10-13,2014-09-30,2014-10-08,FALSE,Demoskop
 2014-sep,Ipsos,24.0,5.6,6.1,4.2,30.7,6.2,7.1,12.4,2.9,11.9,1514,2014-09-26,2014-09-17,2014-09-24,FALSE,Ipsos
 2014-sep,Demoskop,24.6,5.5,6.8,4.0,31.0,5.5,6.9,12.1,2.8,NA,1250,2014-09-23,2014-09-17,2014-09-21,FALSE,Demoskop
