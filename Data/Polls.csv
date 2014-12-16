@@ -1,5 +1,6 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
 2014-dec,Novus,23.7,4.3,6.6,3.9,32.0,5.3,6.0,16.0,1.1,8.5,1786,2014-12-16,2014-12-03,2014-12-14,FALSE,Novus
+2014-dec,YouGov,23.1,5.0,5.7,4.2,29.6,4.7,6.9,17.7,2.5,NA,1010,2014-12-07,2014-12-04,2014-12-05,FALSE,YouGov
 2014-dec,Demoskop,26.1,5.5,6.1,4.0,27.3,6.4,7.9,13.5,2.3,10.5,1250,2014-12-05,2014-11-25,2014-12-03,FALSE,Demoskop
 2014-dec,Inizio,24.5,6.1,6.3,3.7,29.8,6.2,7.5,12.0,2.9,NA,2768,2014-12-04,2014-11-17,2014-12-02,FALSE,Inizio
 2014-dec,Sentio,23.9,6.2,6.2,2.3,27.4,7.4,7.5,16.4,NA,NA,1045,2014-12-02,2014-11-25,2014-11-30,FALSE,Sentio
