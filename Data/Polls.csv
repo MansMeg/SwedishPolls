@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-jan,Demoskop,24.4,4.8,5.3,4.1,32.3,5.3,6.6,14.4,2.1,10.5,1254,2015-01-10,2014-12-30,2015-01-07,FALSE,Demoskop
 2014-dec,Sifo,24.5,5.7,6.1,3.7,31.0,5.9,7.4,12.9,2.4,13.1,1929,2014-12-21,2014-12-08,2014-12-18,FALSE,Sifo
 2014-dec,Ipsos,26.3,5.6,5.1,3.9,32.0,5.4,6.7,12.5,1.5,11.7,1403,2014-12-18,2014-12-08,2014-12-15,FALSE,Ipsos
 2014-dec,Novus,23.7,4.3,6.6,3.9,32.0,5.3,6.0,16.0,1.1,8.5,1786,2014-12-16,2014-12-03,2014-12-14,FALSE,Novus
