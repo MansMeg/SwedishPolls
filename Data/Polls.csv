@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-mar,YouGov,21.1,5.2,6.3,4.6,29.1,5.6,5.8,18.5,2.7,NA,1514,2015-03-20,2015-03-13,2015-03-16,FALSE,YouGov
 2015-mar,Skop,24.4,6.1,6.4,3.6,30.6,6.3,7.1,12.9,2.2,5.0,1035,2015-03-16,2015-02-19,2015-03-11,FALSE,Skop
 2015-mar,Sifo,23.9,5.1,6.6,4.0,29.8,6.5,6.6,13.9,2.5,15.1,1956,2015-03-16,2015-03-02,2015-03-12,FALSE,Sifo
 2015-mar,Inizio,24.7,3.8,6.1,5.2,28.8,6.4,5.7,16.0,2.0,9.6,1844,2015-03-16,2015-03-05,2015-03-15,FALSE,Inizio
