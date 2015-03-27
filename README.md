@@ -37,7 +37,7 @@ Data from 2008 are of better quality (ie less ```NA```).
 Just fork the repository and feel free to send me a merge request with your suggested corrections and/or additions. You can also just drop an issue in the repository.
 
 ### Thanks to
-[Simon Sighurdsson](https://github.com/urdh)
+[Simon Sigurdhsson](https://github.com/urdh)
 
 ### To use the data
 If you just want to download the raw csv-file as is you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, just click "Raw".
