@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-apr,Novus,25.5,5.2,5.9,3.7,27.1,7.1,6.8,15.8,2.2,6.6,4011,2015-04-23,2015-03-23,2015-04-19,FALSE,Novus
 2015-apr,Inizio,24.4,3.5,7.3,4.5,28.8,6.7,6.1,16.3,1.4,10.0,2280,2015-04-20,2015-04-07,2015-04-15,FALSE,Inizio
 2015-apr,Sifo,24.7,5.6,6.5,3.9,27.4,6.6,8.9,12.5,2.6,14.8,1936,2015-04-18,2015-04-07,2015-04-16,FALSE,Sifo
 2015-apr,Sentio,25.5,4.1,5.6,3.5,25.6,7.4,5.6,17.8,2.9,NA,1046,2015-04-16,2015-04-09,2015-04-14,FALSE,Sentio
