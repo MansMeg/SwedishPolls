@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-maj,YouGov,22.9,4.9,6.6,3.5,26.1,6.7,5.4,19.7,2.9,NA,1492,2015-05-21,2015-05-13,2015-05-18,FALSE,YouGov
 2015-maj,Novus,25.7,4.5,6.7,3.5,25.8,6.8,7.2,16.8,1.8,7.2,4002,2015-05-21,2015-04-20,2015-05-17,FALSE,Novus
 2015-maj,Sifo,24.7,5.7,7.2,3.2,25.9,7.5,8.2,14.7,2.3,13.7,1931,2015-05-16,2015-05-04,2015-05-12,FALSE,Sifo
 2015-maj,Demoskop,25.8,5.3,6.2,4.2,27.7,6.3,6.4,15.0,2.2,13.4,1251,2015-05-08,2015-04-28,2015-05-06,FALSE,Demoskop
