@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-jun,Sentio,23.8,3.7,6.3,2.1,23.9,6.9,6.8,22.1,NA,NA,1025,2015-06-18,2015-06-11,2015-06-17,FALSE,Sentio
 2015-jun,Demoskop,26.1,4.7,7.3,3.7,25.9,6.8,6.8,15.7,1.9,13.0,1250,2015-06-08,2015-05-27,2015-06-03,FALSE,Demoskop
 2015-jun,SCB,25.6,4.9,6.4,3.7,30.0,6.2,6.6,14.4,NA,NA,6067,2015-06-05,2015-04-27,2015-05-27,FALSE,SCB
 2015-maj,Sentio,24.3,4.2,8.5,2.2,24.3,6.5,5.5,19.4,NA,NA,1043,2015-05-30,2015-05-21,2015-05-27,FALSE,Sentio
