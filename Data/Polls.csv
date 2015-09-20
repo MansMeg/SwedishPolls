@@ -1,5 +1,6 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
 2015-sep,YouGov,20.0,3.7,7.5,4.9,21.8,6.5,5.0,27.3,2.5,NA,1515,2015-09-16,2015-09-10,2015-09-14,FALSE,YouGov
+2015-sep,Novus,23.1,4.9,6.0,3.2,26.5,6.7,5.9,20.8,2.1,7.8,3002,2015-09-15,2015-08-24,2015-09-13,FALSE,Novus
 2015-sep,Sentio,19.8,4.1,6.6,2.6,24.1,4.9,6.7,26.5,2.7,NA,1013,2015-09-10,2015-09-03,2015-09-09,FALSE,Sentio
 2015-sep,Inizio,21.1,5.1,9.6,4.2,24.9,6.2,4.8,21.5,1.7,9.8,1808,2015-09-10,2015-09-02,2015-09-09,FALSE,Inizio
 2015-sep,Demoskop,23.1,5.3,7.2,3.5,25.2,6.5,6.4,19.5,2.3,10.3,1262,2015-09-05,2015-08-25,2015-09-02,FALSE,Demoskop
