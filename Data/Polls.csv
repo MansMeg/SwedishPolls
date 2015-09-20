@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2015-sep,Sifo,22.8,5.0,6.7,3.7,27.0,7.3,7.2,17.7,2.4,12.1,1916,2015-09-20,2015-09-07,2015-09-17,FALSE,Sifo
 2015-sep,YouGov,20.0,3.7,7.5,4.9,21.8,6.5,5.0,27.3,2.5,NA,1515,2015-09-16,2015-09-10,2015-09-14,FALSE,YouGov
 2015-sep,Novus,23.1,4.9,6.0,3.2,26.5,6.7,5.9,20.8,2.1,7.8,3002,2015-09-15,2015-08-24,2015-09-13,FALSE,Novus
 2015-sep,Sentio,19.8,4.1,6.6,2.6,24.1,4.9,6.7,26.5,2.7,NA,1013,2015-09-10,2015-09-03,2015-09-09,FALSE,Sentio
