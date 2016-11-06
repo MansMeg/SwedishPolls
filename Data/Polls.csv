@@ -1,5 +1,6 @@
 PublYearMonth,Company,M,FP,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
 2016-nov,Demoskop,23.6,4.8,7.8,2.5,27.8,8.4,4.6,17.6,2.0,NA,1251,2016-11-03,2016-10-25,2016-11-02,FALSE,Demoskop
+2016-okt,Inizio,23.4,4.9,8.1,3.9,24.5,7.5,4.2,20.0,2.0,9.1,2359,2016-10-21,2016-10-13,2016-10-19,FALSE,Inizio
 2016-okt,Demoskop,22.7,5.0,8.1,3.7,28.7,6.4,4.1,16.9,2.6,NA,1253,2016-10-10,2016-09-27,2016-10-05,FALSE,Demoskop
 2016-sep,Novus,24.6,4.7,7.5,3.3,26.8,7.6,4.9,17.7,2.1,6.4,4003,2016-09-29,2016-08-29,2016-09-25,FALSE,Novus
 2016-sep,Inizio,24.2,4.3,8.6,3.9,25.2,8.2,3.7,18.9,1.9,7.9,2308,2016-09-23,2016-09-12,2016-09-22,FALSE,Inizio
