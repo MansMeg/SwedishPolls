@@ -33,6 +33,7 @@ Just fork the repository and feel free to send me a merge request with your sugg
 
 ### Thanks to
 [Simon Sigurdhsson](https://github.com/urdh)
+
 [Hampus Joakim Nilsson](https://github.com/hjnilsson)
 
 ### To use the data
