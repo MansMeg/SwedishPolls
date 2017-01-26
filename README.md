@@ -33,6 +33,7 @@ Just fork the repository and feel free to send me a merge request with your sugg
 
 ### Thanks to
 [Simon Sigurdhsson](https://github.com/urdh)
+[Hampus Joakim Nilsson](https://github.com/hjnilsson)
 
 ### To use the data
 If you just want to download the raw csv-file as is you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, just click "Raw".
