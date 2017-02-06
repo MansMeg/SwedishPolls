@@ -8,6 +8,7 @@ warnings_are_errors: true
 # Specify folder
 before_install:
  - pwd
+ - cd RPackage
 
 notifications:
   email:
