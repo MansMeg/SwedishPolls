@@ -47,6 +47,6 @@ Below there are code to read the data directly into different statistical softwa
 To download this file directly to R use the RPackage Swedish polls with the function `get_polls()`:
 
 ```r 
-devtools::install_github("MansMeg/SwedishPolls")
+devtools::install_github("MansMeg/SwedishPolls", subdir = "RPackage")
 polls <- SwedishPolls::get_polls()
 ```
