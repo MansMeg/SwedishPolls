@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MansMeg/SwedishPolls.svg?branch=master)](https://travis-ci.org/MansMeg/SwedishPolls)
+
 Swedish polls
 ========================================================
 
@@ -34,16 +36,17 @@ Just fork the repository and feel free to send me a merge request with your sugg
 ### Thanks to
 [Simon Sigurdhsson](https://github.com/urdh)
 
+[Hampus Joakim Nilsson](https://github.com/hjnilsson)
+
 ### To use the data
 If you just want to download the raw csv-file as is you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, just click "Raw".
 
 Below there are code to read the data directly into different statistical software.
 
 #### Using R
-To download this file directly to R just use the following commands and you are good to go:
+To download this file directly to R use the RPackage Swedish polls with the function `get_polls()`:
 
 ```r 
-install.packages("repmis") # If not already installed
-data_url <- "https://github.com/MansMeg/SwedishPolls/raw/master/Data/Polls.csv"
-polls <- repmis::source_data(data_url, sep = ",", header = TRUE)
+devtools::install_github("MansMeg/SwedishPolls", subdir = "RPackage")
+polls <- SwedishPolls::get_polls()
 ```

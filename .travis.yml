@@ -1,0 +1,16 @@
+# Native R Travis Github
+language: r
+cache: packages
+
+# Be strict when checking our package
+warnings_are_errors: true
+
+# Specify folder
+before_install:
+ - pwd
+ - cd RPackage
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
