@@ -1,8 +1,6 @@
 
 context("SwedishPolls data")
 
-system("pwd")
-
 test_that(desc="get_polls()",{
   
   # Test to download dataset
@@ -31,3 +29,6 @@ test_that(desc="get_polls() raw",{
   
 })
 
+cat("\n")
+system("pwd")
+cat("\n")
