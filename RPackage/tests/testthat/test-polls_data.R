@@ -1,6 +1,8 @@
 
 context("SwedishPolls data")
 
+system("pwd")
+
 test_that(desc="get_polls()",{
   
   # Test to download dataset
@@ -19,8 +21,6 @@ test_that(desc="get_polls()",{
   expect_true(all((dat$collectPeriodTo <= dat$PublDate)[1:300], na.rm = TRUE), info = "dat$collectPeriodTo > dat$PublDate") # Previous data can contain errors
 
 })
-
-
 
 test_that(desc="get_polls() raw",{
   
