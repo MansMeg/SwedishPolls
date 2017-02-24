@@ -40,9 +40,12 @@ get_polls_local <-function(as){
 #' @keywords Internal
 get_path_to_polls <- function(){
   wd_path <- strsplit(getwd(), "/")[[1]]
-  no_folders <- length(wd_path) - which(wd_path == "RPackage") + 1
-  if(length(no_folders) == 0) no_folders <- 0
-  path <- paste0(c(rep("../", no_folders), "Data/Polls.csv"), collapse = "")
+  depth <- length(wd_path)
+  while(!checkmate::test_file_exists(paste(c(wd_path[1:depth], "Data", "Polls.csv"), collapse = "/"))){
+    depth <- depth - 1L
+    if(depth == 0) stop("Polls.csv not found!")
+  }
+  path <- paste(c(wd_path[1:depth], "Data", "Polls.csv"), collapse = "/")
   path
 }
 
