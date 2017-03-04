@@ -8,6 +8,7 @@ Maintainer: Mans Magnusson <mons.magnusson@gmail.com>
 Description: Functionality to download run tests on the Swedish polls dataset.
 License: GPL-3
 RoxygenNote: 5.0.1
+Depends: R (>= 3.2.0)
 Imports:
   httr,
   checkmate,
