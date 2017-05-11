@@ -50,3 +50,9 @@ To download this file directly to R use the RPackage Swedish polls with the func
 devtools::install_github("MansMeg/SwedishPolls", subdir = "RPackage")
 polls <- SwedishPolls::get_polls()
 ```
+
+Using R it is allso simple to get data for the last elections in the same format as the polls.
+
+```r 
+data("elections", package = "SwedishPolls")
+```

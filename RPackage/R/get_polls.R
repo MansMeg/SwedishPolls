@@ -24,12 +24,29 @@ get_polls <-function(){
 #' @keywords Internal
 get_polls_local <-function(as){
   checkmate::assert_choice(as, c("data_frame", "raw"))
-  file_tmp_path <- "../../../Data/Polls.csv"
+
+  file_tmp_path <- get_path_to_polls()
+  
   if(as == "data_frame"){
     res <- read_polls_csv(file_tmp_path)
   } else if (as == "raw") {
     res <- readLines(file_tmp_path)    
   }
+  res
+}
+
+#' Compute path to Polls files
+#' 
+#' @keywords Internal
+get_path_to_polls <- function(){
+  wd_path <- strsplit(getwd(), "/")[[1]]
+  depth <- length(wd_path)
+  while(!checkmate::test_file_exists(paste(c(wd_path[1:depth], "Data", "Polls.csv"), collapse = "/"))){
+    depth <- depth - 1L
+    if(depth == 0) stop("Polls.csv not found!")
+  }
+  path <- paste(c(wd_path[1:depth], "Data", "Polls.csv"), collapse = "/")
+  path
 }
 
 #' @rdname get_polls
