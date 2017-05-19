@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2017-maj,Inizio,16.8,4.7,13.6,4.2,25.7,7.2,3.0,20.8,NA,NA,2065,2017-05-19,2017-05-10,2017-05-17,FALSE,Inizio
 2017-maj,YouGov,16.0,5.4,12.8,2.9,25.3,8.1,2.1,23.6,2.6,25,1515,2017-05-17,2017-05-11,2017-05-15,FALSE,YouGov
 2017-maj,Sifo,17.5,5.7,12.6,2.7,29.5,7.8,3.7,16.6,2.6,14.2,1940,2017-05-14,2017-05-02,2017-05-11,FALSE,Sifo
 2017-maj,Novus,16.4,5.3,12.2,3.9,28.3,7.5,4.3,19.5,1.9,8.5,3002,2017-05-11,2017-04-27,2017-05-07,FALSE,Novus
