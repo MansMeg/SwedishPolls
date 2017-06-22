@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2017-juni,Ipsos,16,7,12,3,29,8,4,18,2,12,1633,2017-06-22,2017-06-07,2017-06-19,FALSE,Ipsos
 2017-juni,YouGov,17.4,5.3,11.7,3.4,22.3,8.0,4.2,24.0,2.5,17,1509,2017-06-21,2017-06-16,2017-06-20,FALSE,YouGov
 2017-juni,Novus,16.6,5.6,13.3,3.1,27.3,7.6,4.3,19.3,2.0,7.5,4002,2017-06-18,2017-05-08,2017-06-04,FALSE,Novus
 2017-juni,Sifo,15.9,6.2,13.4,2.9,29.2,7.7,4.0,15.9,2.1,11.7,NA,2017-06-18,2017-06-05,2017-06-15,FALSE,Sifo
