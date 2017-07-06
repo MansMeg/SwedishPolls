@@ -1,5 +1,4 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
-<<<<<<< HEAD
 2017-juli,Demoskop,15.7,6.7,11.9,2.6,27.0,8.0,4.9,20.1,1.8,NA,1251,2017-07-05,2017-06-27,2017-07-04,FALSE,Demoskop
 2017-juni,Novus,15.9,5.8,12.5,3.3,27.3,8.4,4.5,20.0,1.3,NA,3004,2017-06-29,2017-06-05,2017-06-25,FALSE,Novus
 2017-juni,Ipsos,16,7,12,3,29,8,4,18,2,12,1633,2017-06-22,2017-06-07,2017-06-19,FALSE,Ipsos
