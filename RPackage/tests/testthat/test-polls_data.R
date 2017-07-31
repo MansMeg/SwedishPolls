@@ -18,6 +18,9 @@ test_that(desc="get_polls()",{
   expect_true(all(dat$collectPeriodFrom <= dat$collectPeriodTo, na.rm = TRUE), info = "collectPeriodFrom > dat$collectPeriodTo")
   expect_true(all((dat$collectPeriodTo <= dat$PublDate)[1:300], na.rm = TRUE), info = "dat$collectPeriodTo > dat$PublDate") # Previous data can contain errors
 
+  # Test specific variables
+  expect_true(all(nchar(dat$PublYearMonth) == 8))
+  
 })
 
 test_that(desc="get_polls() raw",{
