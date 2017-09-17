@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2017-sep,Sentio,17.0,4.7,11.5,3.1,25.3,6.9,4.1,23.4,2.8,74,1050,2017-09-16,2017-09-08,2017-09-11,FALSE,Sentio
 2017-sep,Inizio,16.5,3.6,12.3,4.7,28.8,6.5,3.5,19.9,1.5,9.3,2066,2017-09-09,2017-09-01,2017-09-06,FALSE,Inizio
 2017-sep,Demoskop,17.3,5.2,11.2,2.8,30.3,8.0,4.6,18.1,2.0,NA,1253,2017-09-08,2017-08-29,2017-09-05,FALSE,Demoskop
 2017-sep,Novus,16.3,5.4,12.0,3.9,29.7,6.8,4.8,18.1,NA,NA,4001,2017-09-07,2017-08-07,2017-09-03,FALSE,Novus
