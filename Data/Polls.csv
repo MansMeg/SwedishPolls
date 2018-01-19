@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-jan,YouGov,20.9,3.8,9.1,2.5,26.2,7.8,4.5,20.5,2.1,24,1526,2018-01-19,2018-01-12,2018-01-15,FALSE,YouGov
 2018-jan,Demoskop,22.6,4.5,9.2,2.9,27.8,7.2,4.4,17.9,1.9,11.8,1621,2018-01-11,2018-01-02,2018-01-09,FALSE,Demoskop
 2018-jan,Inizio,23.7,3.4,9.9,4.0,28.3,7.4,3.6,16.0,NA,NA,2268,2018-01-10,2018-01-03,2018-01-08,FALSE,Inizio
 2017-dec,Novus,21.3,5.4,9.8,3.3,29.5,7.5,4.3,16.8,NA,6.6,4008,2017-12-29,2017-11-27,2017-12-21,FALSE,Novus
