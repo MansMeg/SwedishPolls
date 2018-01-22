@@ -1,4 +1,6 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-jan,Sentio,19.9,3.6,8.6,2.9,27.0,7.1,3.8,22.2,2.7,29,1191,2018-01-20,2018-01-12,2018-01-16,FALSE,Sentio
+2018-jan,Sifo,24.4,5.1,8.8,2.9,27.8,7.7,4.1,16.2,2.1,11.3,9876,2018-01-19,2018-01-08,2018-01-18,FALSE,Sifo
 2018-jan,YouGov,20.9,3.8,9.1,2.5,26.2,7.8,4.5,20.5,2.1,24,1526,2018-01-19,2018-01-12,2018-01-15,FALSE,YouGov
 2018-jan,Demoskop,22.6,4.5,9.2,2.9,27.8,7.2,4.4,17.9,1.9,11.8,1621,2018-01-11,2018-01-02,2018-01-09,FALSE,Demoskop
 2018-jan,Inizio,23.7,3.4,9.9,4.0,28.3,7.4,3.6,16.0,NA,NA,2268,2018-01-10,2018-01-03,2018-01-08,FALSE,Inizio
