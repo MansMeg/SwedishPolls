@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-mars,Novus,22.6,5.0,9.3,3.2,27.8,7.8,3.8,17.8,NA,7.1,5462,2018-03-25,2018-02-19,2018-03-18,FALSE,Novus
 2018-mars,Ipsos,21,5,10,3,28,9,4,17,NA,17,1839,2018-03-21,2018-03-09,2018-03-19,FALSE,Ipsos
 2018-mars,YouGov,18.8,4.7,7.6,3.6,24.0,8.3,4.0,22.4,2.5,24,1516,2018-03-21,2018-03-16,2018-03-19,FALSE,YouGov
 2018-mars,Sifo,23.1,4.4,10.0,3.0,29.0,7.7,3.8,15.9,1.8,11.9,9724,2018-03-16,2018-03-05,2018-03-15,FALSE,Sifo
