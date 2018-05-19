@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-maj,Sifo,23.6,4.8,8.1,3.5,25.2,9.3,4.0,18.7,NA,NA,8259,2018-05-18,2018-05-07,2018-05-17,FALSE,Sifo
 2018-maj,Inizio,22.4,4.2,9.0,4.8,26.6,7.4,3.8,16.9,2.5,NA,2253,2018-05-11,2018-05-01,2018-05-07,FALSE,Inizio
 2018-maj,Sentio,20.4,3.7,7.6,2.1,25.3,9.2,4.4,23.1,2.2,NA,1010,2018-05-09,2018-05-04,2018-05-07,FALSE,Sentio
 2018-maj,Demoskop,22.3,4.9,9.1,2.9,26.3,7.7,4.4,19.4,1.5,NA,1624,2018-05-06,2018-04-24,2018-05-02,FALSE,Demoskop
