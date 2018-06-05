@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-jun,SCB,22.6,4.4,8.7,2.9,28.3,7.4,4.3,18.5,NA,18,4632,2018-06-05,2018-04-27,2018-05-29,FALSE,SCB
 2018-maj,Inizio,22.0,4.3,9.5,4.9,24.5,8.2,4.9,19.5,1.5,6.7,2116,2018-06-01,2018-05-21,2018-05-30,FALSE,Inizio
 2018-maj,Ipsos,22,5,9,4,24,9,4,20,2,NA,1818,2018-05-22,2018-05-10,2018-05-21,FALSE,Ipsos
 2018-maj,Novus,20.6,4.4,9.4,3.5,26.9,8.4,4.3,19.2,NA,6.4,5306,2018-05-21,2018-04-16,2018-05-13,FALSE,Novus
