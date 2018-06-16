@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-jun,Sifo,20.6,4.9,10.8,2.4,26.1,9.8,4.0,18.5,1.5,10.9,11640,2018-06-15,2018-06-04,2018-06-14,FALSE,Sifo
 2018-jun,Demoskop,19.9,5.1,9.8,3.8,23.1,8.3,4.9,21.0,2.3,11.0,1609,2018-06-10,2018-05-29,2018-06-06,FALSE,Demoskop
 2018-jun,Novus,21.1,4.6,8.9,2.9,23.8,9.1,4.5,21.9,NA,NA,4633,2018-06-07,2018-05-26,2018-06-06,TRUE,Novus
 2018-jun,Sentio,17.1,7.0,7.2,3.3,21.7,9.7,4.8,26.1,0.6,27,1004,2018-06-06,2018-06-01,2018-06-05,FALSE,Sentio
