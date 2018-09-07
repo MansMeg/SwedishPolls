@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-sep,Skop,17.3,6.2,7.9,6.9,23.1,10.6,5.7,17.7,0.8,1,2928,2018-09-06,2018-08-30,2018-09-06,FALSE,Skop
 2018-sep,Sifo,17.2,6.0,10.0,5.9,25.1,10.1,6.2,16.9,1.0,NA,3364,2018-09-06,2018-09-03,2018-09-05,FALSE,Sifo
 2018-sep,Ipsos,17.3,6.2,9.6,5.9,25.9,10.1,4.8,16.8,NA,NA,1874,2018-09-06,2018-09-02,2018-09-05,FALSE,Ipsos
 2018-sep,Skop,18.2,5.9,7.7,6.6,22.1,10.6,5.6,19.2,1.1,1,2651,2018-09-05,2018-08-29,2018-09-05,FALSE,Skop
