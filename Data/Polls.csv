@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2018-sep,Sifo,16.9,6.0,10.0,6.3,24.4,10.0,6.2,17.0,1.1,NA,3480,2018-09-07,2018-09-05,2018-09-06,FALSE,Sifo
 2018-sep,Demoskop,17.9,6.2,8.2,6.0,26.5,9.8,5.3,17.2,NA,NA,1673,2018-09-07,2018-09-01,2018-09-06,FALSE,Demoskop
 2018-sep,Novus,17.7,6.5,8.6,5.7,24.9,10.0,5.0,19.1,NA,NA,1847,2018-09-07,2018-09-04,2018-09-06,FALSE,Novus
 2018-sep,Skop,17.3,6.2,7.9,6.9,23.1,10.6,5.7,17.7,0.8,1,2928,2018-09-06,2018-08-30,2018-09-06,FALSE,Skop
