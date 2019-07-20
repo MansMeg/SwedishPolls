@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2019-jul,Skop,17.0,5.7,9.5,9.2,25.6,8.9,4.7,18.0,NA,NA,1048,2019-07-20,2019-06-25,2019-07-16,FALSE,Skop
 2019-jun,Novus,18.8,3.6,10.1,7.7,26.7,9.0,5.9,16.7,NA,NA,2746,2019-06-27,2019-06-03,2019-06-23,FALSE,Novus
 2019-jun,Inizio,19.7,3.6,9.4,7.0,25.4,8.3,5.0,19.4,NA,NA,2147,2019-06-27,2019-06-20,2019-06-26,TRUE,Inizio
 2019-maj,Sentio,17.0,3.7,7.4,7.9,25.7,8.8,4.8,21.8,NA,NA,NA,2019-06-21,2019-06-03,2019-06-13,FALSE,Sentio
