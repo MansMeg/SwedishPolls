@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2019-dec,Sifo,17.2,4.0,8.0,6.0,24.6,9.7,4.7,24.4,NA,11.6,8214,2019-12-13,2019-12-02,2019-12-12,FALSE,Sifo
 2019-dec,Demoskop,17.5,3.9,9.6,5.9,24.3,7.9,4.4,25.4,NA,NA,2048,2019-12-06,2019-11-26,2019-12-04,FALSE,Demoskop
 2018-dec,SCB,18.3,4.1,7.3,6.6,26.3,8.1,5.1,22.6,NA,15,4645,2019-12-03,2019-10-28,2019-11-26,FALSE,SCB
 2019-nov,Ipsos,17,3,8,7,25,8,7,25,NA,NA,NA,2019-11-26,2019-11-11,2019-11-24,FALSE,Ipsos
