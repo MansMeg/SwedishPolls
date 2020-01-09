@@ -12,4 +12,3 @@ elections
 A dataset containing the election results during the period of the Swedish polls.
 }
 \keyword{datasets}
-

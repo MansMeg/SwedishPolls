@@ -21,4 +21,3 @@ read_polls_csv(path)
 Download and read in the polls dataset in R as a \code{tibble}.
 }
 \keyword{Internal}
-
