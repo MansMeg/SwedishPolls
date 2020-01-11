@@ -59,5 +59,5 @@ read_polls_csv <- function(path){
   df$collectPeriodFrom <- lubridate::ymd(df$collectPeriodFrom)
   df$collectPeriodTo <- lubridate::ymd(df$collectPeriodTo)
   df$house <- factor(df$house)
-  dplyr::as_data_frame(df)
+  dplyr::as_tibble(df)
 }
