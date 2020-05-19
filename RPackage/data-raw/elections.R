@@ -8,9 +8,9 @@ elect <- data.frame(rbind(c(0.2623, 0.0754, 0.0788, 0.0659, 0.3499, 0.0585, 0.05
 elect <- elect*100
 colnames(elect) <- c("M", "L", "C", "KD", "S", "V", "MP", "SD", "FI")
 
-elec_date <- c(as.Date('2006-09-17'),as.Date('2010-09-23'),as.Date('2014-09-14'), as.Date('2018-09-09')) 
+elec_date <- c(as.Date('2006-09-17'),as.Date('2010-09-19'),as.Date('2014-09-14'), as.Date('2018-09-09'))
 
-elections <- data_frame(PublYearMonth = c("2006-sep","2010-sep","2014-sep", "2018-sep"),
+elections <- tibble(PublYearMonth = c("2006-sep","2010-sep","2014-sep", "2018-sep"),
                         Company = rep(as.character(NA), 4),
                         M=elect$M,
                         L=elect$L,
@@ -19,12 +19,12 @@ elections <- data_frame(PublYearMonth = c("2006-sep","2010-sep","2014-sep", "201
                         S=elect$S,
                         V=elect$V,
                         MP=elect$MP,
-                        SD=elect$SD, 
+                        SD=elect$SD,
                         FI = elect$FI,
                         Uncertain = rep(as.numeric(NA), 4),
-                        n = c(5551278, 6028682, 6290016, 6532063), 
+                        n = c(5551278, 6028682, 6290016, 6532063),
                         PublDate = elec_date,
-                        collectPeriodFrom = elec_date, 
+                        collectPeriodFrom = elec_date,
                         collectPeriodTo = elec_date,
                         approxPeriod = FALSE,
                         house = "Election")
