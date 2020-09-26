@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2020-sep,Sentio,19.7,3.0,7.5,7.1,25.1,8.6,3.9,22.4,NA,NA,NA,2020-09-25,2020-09-16,2020-09-22,TRUE,Sentio
 2020-sep,Sifo,20.6,3.5,8.2,6.2,27.5,8.9,3.8,19.8,NA,11.7,5029,2020-09-18,2020-09-07,2020-09-17,FALSE,Sifo
 2020-sep,Novus,21.2,3.2,7.8,5.7,27.0,9.3,4.3,19.6,NA,6.6,3082,2020-09-17,2020-08-24,2020-09-13,FALSE,Novus
 2020-sep,Sentio,20.3,2.8,5.1,5.4,26.7,10.0,5.0,22.4,NA,NA,NA,2020-09-04,2020-08-22,2020-09-01,TRUE,Sentio
