@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2020-okt,Skop,21.1,3.3,9.1,5.9,26.0,12.1,3.1,17.8,NA,2,1000,2020-10-28,2020-10-23,2020-10-26,FALSE,Skop
 2020-okt,Ipsos,21,3,9,6,25,11,5,20,NA,11,1501,2020-10-28,2020-10-11,2020-10-23,TRUE,Ipsos
 2020-okt,Sentio,18.8,2.8,6.5,5.9,24.8,9.7,4.6,24.1,NA,NA,NA,2020-10-26,2020-10-16,2020-10-23,TRUE,Sentio
 2020-okt,Sifo,20.6,3.2,7.7,5.9,26.4,10.0,4.3,20.2,NA,13.4,7299,2020-10-16,2020-10-05,2020-10-15,FALSE,Sifo
