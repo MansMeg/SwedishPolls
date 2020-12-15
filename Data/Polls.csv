@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2020-dec,Sifo,21.7,3.0,7.7,5.3,27.8,10.3,3.7,18.9,NA,NA,NA,2020-12-11,2020-11-20,2020-12-06,TRUE,Sifo
 2020-dec,Novus,21.7,2.7,8.2,5.4,28.0,9.7,4.1,18.5,NA,NA,3813,2020-12-10,2020-11-09,2020-12-06,FALSE,Novus
 2020-dec,Demoskop,23.2,2.8,9.4,5.7,25.0,9.3,3.6,19.6,NA,NA,2278,2020-12-13,2020-11-26,2020-12-02,FALSE,Demoskop
 2020-dec,SCB,22.1,3.0,7.6,5.4,29.4,9.3,4.2,17.6,NA,14,4692,2020-12-02,2020-11-02,2020-11-26,FALSE,SCB
