@@ -1,4 +1,5 @@
 .Rproj.user
+.DS_Store
 .Rhistory
 .RData
 *.Rproj
