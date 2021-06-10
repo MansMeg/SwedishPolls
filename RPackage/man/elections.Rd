@@ -4,7 +4,9 @@
 \name{elections}
 \alias{elections}
 \title{Elections results in Sweden}
-\format{A data frame with one row per election and the same variables as in the Polls dataset.}
+\format{
+A data frame with one row per election and the same variables as in the Polls dataset.
+}
 \usage{
 elections
 }
