@@ -30,7 +30,8 @@ There are two files. ```Polls.csv``` and ```OldPolls.csv```. The file ```Polls.c
 In the earlier data the quality of the data is of less good quality (more ```NA```:s in sample size and collection period). Before 2000 only Sifo is currently added. 
 Data from 2008 are of better quality (ie less ```NA```). 
 
-Ipsos round their numbers from the mid 2010s. Sometime they sum up to 101. These situation as been normalized by multiplying Ipsos values with 100/101. get get the original values, just round up the Ipsos values to the closest integer.
+#### Issue with Ipsos
+The house Ipsos round their numbers from the mid 2010s. Sometime these numbers sum up to 101. In these situations, the numbers has been normalized by multiplying the values with 100/101. To get the original values, just round up the Ipsos values to the closest integer.
 
 ### If you spot any faults or want to contribute...
 Just fork the repository and feel free to send me a merge request with your suggested corrections and/or additions. You can also just drop an issue in the repository.
