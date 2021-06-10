@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
-          remotes::install_deps(dependencies = TRUE)
+          remotes::install_deps(pkgdir = "rpackage", dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
         run: |
           options(crayon.enabled = TRUE)
-          rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
+          rcmdcheck::rcmdcheck(path  = "rpackage", args = "--no-manual", error_on = "error")
         shell: Rscript {0}
