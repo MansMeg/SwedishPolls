@@ -3,8 +3,11 @@
 #' @description 
 #' Download and read in the polls dataset in R as a \code{tibble}.
 #'
+#' @param as How to get polls (raw or as parsed data_frame).
+#' 
 #' @export
-get_polls <-function(){
+get_polls <-function(as = "data_frame"){
+  checkmate::assert_choice(as, c("data_frame", "raw"))
   # Create file path
   file_tmp_path <- paste0(tempdir(), "/polls.csv")
   
@@ -16,7 +19,13 @@ get_polls <-function(){
   # Download file
   utils::download.file(file_to_dl, destfile = file_tmp_path, method = "curl", quiet = TRUE)
 
-  read_polls_csv(file_tmp_path)
+  if(as == "data_frame"){
+    res <- read_polls_csv(file_tmp_path)
+  } else if (as == "raw") {
+    res <- readLines(file_tmp_path)    
+  }
+  
+  res
 }
 
 #' @rdname get_polls

@@ -4,7 +4,7 @@ context("SwedishPolls data")
 test_that(desc="get_polls()",{
   
   # Test to download dataset
-  expect_silent(dat <- SwedishPolls:::get_polls_local("data_frame"))
+  expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
  
   # Test of dataset structure
   expect_s3_class(dat, "tbl_df")
@@ -30,7 +30,7 @@ test_that(desc="get_polls()",{
 test_that(desc="get_polls() raw",{
   
   # Test to download dataset
-  expect_silent(dat <- SwedishPolls:::get_polls_local("raw"))
+  expect_silent(dat <- SwedishPolls:::get_polls("raw"))
   
   expect_true(all(!grepl(x = dat[1:50], pattern = ",,")), info = "Missing values not NA.")
   
