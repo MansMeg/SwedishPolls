@@ -10,4 +10,3 @@ get_path_to_polls()
 Compute path to Polls files
 }
 \keyword{Internal}
-
