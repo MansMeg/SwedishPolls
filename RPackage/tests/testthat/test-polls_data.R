@@ -24,7 +24,12 @@ test_that(desc="get_polls()",{
 
   # Test specific variables
   expect_true(all(nchar(dat$PublYearMonth) == 8))
-
+  
+  # Test for duplicates
+  ddat <- dat[,c("Company", "PublDate", "collectPeriodFrom", "collectPeriodTo")]
+  ddat <- ddat[rowSums(is.na(ddat))==0,]
+  dups <- duplicated(ddat)
+  expect_true(!any(dups))
 })
 
 test_that(desc="get_polls() raw",{
