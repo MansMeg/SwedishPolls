@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2021-jun,Novus,21.8,2.5,7.9,5.0,25.5,11.2,3.5,21.4,NA,4.1,2408,2021-06-29,2021-06-21,2021-06-27,FALSE,Novus
 2021-jun,Ipsos,22,2,10,6,24,12,3,19,NA,NA,NA,2021-06-22,2021-06-08,2021-06-20,FALSE,Ipsos
 2021-jun,Sifo,22.4,2.3,9.9,5.1,25.8,9.6,3.5,20.2,NA,11.9,6539,2021-06-18,2021-06-07,2021-06-17,FALSE,Sifo
 2021-jun,Novus,22.6,2.3,9.4,5.3,26.1,9.6,4.2,19.2,NA,5.8,4925,2021-06-11,2021-05-03,2021-06-06,FALSE,Novus
