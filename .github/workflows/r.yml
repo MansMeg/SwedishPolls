@@ -28,7 +28,7 @@ jobs:
         run: |
           Sys.getenv("GITHUB_REF")
           install.packages(c("remotes", "rcmdcheck"))
-          remotes::install_deps(pkgdir = "rpackage", dependencies = TRUE)
+          remotes::install_deps(pkgdir = "RPackage", dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
         run: |
