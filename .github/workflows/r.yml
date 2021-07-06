@@ -1,9 +1,15 @@
 on:
   push:
+    paths:
+      - 'Data/Polls.csv'  
+      - '.github/**'        
     branches:
       - main
       - master
   pull_request:
+    paths:
+      - 'Data/Polls.csv'
+      - '.github/**'         
     branches:
       - main
       - master
@@ -27,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           Sys.getenv("GITHUB_REF")
-          install.packages(c("remotes", "rcmdcheck"))
+          install.packages(c("remotes", "rcmdcheck", "httr"))
           remotes::install_deps(pkgdir = "RPackage", dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
