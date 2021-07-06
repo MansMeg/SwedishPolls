@@ -1,15 +1,17 @@
 on:
   push:
     paths:
-      - 'Data/Polls.csv'  
-      - '.github/**'        
+      - 'Data/Polls.csv'
+      - '.github/**'
+      - 'RPackage/**'
     branches:
       - main
       - master
   pull_request:
     paths:
       - 'Data/Polls.csv'
-      - '.github/**'         
+      - '.github/**'
+      - 'RPackage/**'     
     branches:
       - main
       - master
