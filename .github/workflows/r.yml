@@ -31,7 +31,5 @@ jobs:
           remotes::install_deps(pkgdir = "RPackage", dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
-        run: |
-          options(crayon.enabled = TRUE)
-          rcmdcheck::rcmdcheck(path  = "rpackage", args = "--no-manual", error_on = "error")
+        run: rcmdcheck::rcmdcheck(path = "RPackage", args = "--no-manual", error_on = "error")          
         shell: Rscript {0}
