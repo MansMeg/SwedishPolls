@@ -1,9 +1,17 @@
 on:
   push:
+    paths:
+      - 'Data/Polls.csv'
+      - '.github/**'
+      - 'RPackage/**'
     branches:
       - main
       - master
   pull_request:
+    paths:
+      - 'Data/Polls.csv'
+      - '.github/**'
+      - 'RPackage/**'     
     branches:
       - main
       - master
@@ -12,19 +20,26 @@ name: R-CMD-check
 
 jobs:
   R-CMD-check:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@v1
+      - name: Install libcurl
+        run: sudo apt-get install libcurl4-openssl-dev      
+      - name: Cache R packages
+        if: runner.os != 'Windows'
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-${{ hashFiles('DESCRIPTION') }} 
       - name: Install dependencies
         run: |
+          Sys.getenv("GITHUB_REF")
           install.packages(c("remotes", "rcmdcheck"))
-          remotes::install_deps(pkgdir = "rpackage", dependencies = TRUE)
+          remotes::install_deps(pkgdir = "RPackage", dependencies = TRUE)
         shell: Rscript {0}
       - name: Check
-        run: |
-          options(crayon.enabled = TRUE)
-          rcmdcheck::rcmdcheck(path  = "rpackage", args = "--no-manual", error_on = "error")
+        run: rcmdcheck::rcmdcheck(path = "RPackage", args = "--no-manual", error_on = "error")          
         shell: Rscript {0}
