@@ -33,6 +33,9 @@ Data from 2008 are of better quality (ie less ```NA```).
 #### Issue with Ipsos
 The house Ipsos round their numbers from the mid 2010s. Sometime these numbers sum up to 101. In these situations, the numbers has been normalized by multiplying the values with 100/101. To get the original values, just round up the Ipsos values to the closest integer.
 
+#### Issue with Sentio
+Sentio usually reports two numbers, total respondents and party preferences. Her we use the number of party preferences. 
+
 ### If you spot any faults or want to contribute...
 Just fork the repository and feel free to send me a merge request with your suggested corrections and/or additions. You can also just drop an issue in the repository.
 
