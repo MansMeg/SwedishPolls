@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2021-okt,Sentio,22.7,3.0,5.3,5.9,24.4,10.4,3.9,21.7,NA,NA,NA,2021-10-08,2021-09-24,2021-10-04,TRUE,Sentio
 2021-okt,Demoskop,22.2,2.7,9.5,5.5,26.7,8.6,3.0,20.9,NA,NA,2417,2021-10-08,2021-09-29,2021-10-06,FALSE,Demoskop
 2021-okt,Novus,22.6,2.6,8.8,4.6,26.0,10.6,4.0,19.4,NA,5.5,9651,2021-10-08,2021-08-30,2021-10-03,FALSE,Novus
 2021-sep,Ipsos,22,3,8,4,25,11,4,20,NA,15,1533,2021-09-29,2021-09-14,2021-09-26,FALSE,Ipsos
