@@ -3,7 +3,7 @@
 Swedish polls
 ========================================================
 
-This is a short description of the file Polls.csv. The file contains all polls conducted in Sweden regarding political sympathies. The file originated from [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) but has been updated and variables has been added.
+This is a short description of the file Polls.csv. The file contains all polls conducted in Sweden regarding political sympathies. The file originated from [Novus](http://www.novus.se/vaeljaropinionen/ekotnovus-poll-of-polls.aspx) in 2013 but has been updated and variables has been added since then.
 
 ### Data description
 
@@ -15,7 +15,7 @@ PublYearMonth | Month and year of publication
 Company	      | Company name at publication
 M - Fi	      | Poll results for the different parties
 Uncertain	    | Uncertain voters
-n	            | The number of observations
+n	            | The number of observations (see below)
 PublDate	    | Date of publication
 collectPeriodFrom	| Start date of data collection
 collectPeriodTo	| End date of data collection
@@ -24,7 +24,8 @@ house | The latest companyname (if the name has been changed)
 
 The value ```NA``` follows the R standard and means missing value. 
 
-There are two files. ```Polls.csv``` and ```OldPolls.csv```. The file ```Polls.csv``` contains polls from 1995 - and ```OldPolls.csv``` contains data up to (and including) 1994. The same variables are used (except actual parties).
+#### Definitions of the number of observations
+Some polling institutes report both the total sample size and the number of respondents. Here we use the number of actual respondents as the sample size.
 
 ### Quality of the data
 In the earlier data the quality of the data is of less good quality (more ```NA```:s in sample size and collection period). Before 2000 only Sifo is currently added. 
@@ -34,12 +35,13 @@ Data from 2008 are of better quality (ie less ```NA```).
 The house Ipsos round their numbers from the mid 2010s. Sometime these numbers sum up to 101. In these situations, the numbers has been normalized by multiplying the values with 100/101. To get the original values, just round up the Ipsos values to the closest integer.
 
 #### Issue with Sentio
-Sentio usually reports two numbers, total respondents and party preferences. Her we use the number of party preferences. 
+Sentio usually reports two numbers, total respondents and party preferences. Here we use the number of party preferences, but in older data other definitions might have been used.
 
 ### If you spot any faults or want to contribute...
 Just fork the repository and feel free to send me a merge request with your suggested corrections and/or additions. You can also just drop an issue in the repository.
 
-### Thanks to
+
+## Thanks to
 [Simon Sigurdhsson](https://github.com/urdh)
 
 [Hampus Joakim Nilsson](https://github.com/hjnilsson)
