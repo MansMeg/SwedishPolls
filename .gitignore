@@ -4,3 +4,4 @@
 .RData
 *.Rproj
 node_modules
+*.csv#
