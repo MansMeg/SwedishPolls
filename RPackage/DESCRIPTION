@@ -16,3 +16,4 @@ Imports:
   httr,  
   lubridate,
   testthat
+LazyData: true
