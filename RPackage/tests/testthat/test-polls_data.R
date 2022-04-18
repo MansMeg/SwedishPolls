@@ -16,8 +16,8 @@ test_that(desc="get_polls()",{
  
   # Test consistancy
   incorrect_polls <- dat$PublYearMonth == "2012-jun" & dat$Company == "YouGov"
-  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 93.2, upper = 99.99, info = "Parties do not sum to 93.2 < x < 100")
-  checkmate::expect_numeric(rowSums(dat[1:100, 3:11], na.rm = TRUE), lower = 93.2, upper = 99.99, info = "Parties do not sum to 93.2 < x < 100")
+  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 93.2, upper = 100, info = "Parties do not sum to 93.2 < x < 100")
+  checkmate::expect_numeric(rowSums(dat[1:100, 3:11], na.rm = TRUE), lower = 93.2, upper = 100, info = "Parties do not sum to 93.2 < x < 100")
   checkmate::expect_integerish(dat$n, lower = 500)
   
   expect_true(all(dat$collectPeriodFrom <= dat$collectPeriodTo, na.rm = TRUE), info = "collectPeriodFrom > dat$collectPeriodTo")
