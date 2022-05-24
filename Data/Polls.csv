@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2022-maj,Ipsos,22,3,5,5,32,9,3,18,NA,NA,1569,2022-05-24,2022-05-10,2022-05-22,FALSE,Ipsos
 2022-maj,Infostat,21.3,3.5,5.9,6,27.7,8.2,3.7,21,NA,NA,1690,2022-05-13,2022-05-04,2022-05-10,FALSE,Infostat
 2022-maj,Sifo,20.8,3.6,6.3,5.6,32.6,8.2,2.7,18.1,NA,12.7,6890,2022-05-13,2022-05-02,2022-05-12,FALSE,Sifo
 2022-maj,Demoskop,22.9,2.9,7.9,6.4,31.2,7.3,3,16.9,NA,NA,2154,2022-05-06,2022-04-26,2022-05-04,FALSE,Demoskop
