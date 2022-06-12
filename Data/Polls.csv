@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2022-jun,Novus,21.5,3.5,5.9,6.3,30.2,9.4,3.3,18.0,NA,6.5,3804,2022-06-09,2022-05-09,2022-06-05,FALSE,Novus
 2022-jun,SCB,21.3,3.4,6.7,5.2,33.3,7.8,3.3,17.0,NA,15,6090,2022-06-02,2022-04-28,2022-05-25,FALSE,SCB
 2022-maj,Sentio,20.4,2.6,5.3,8.5,29.2,7.8,4.1,19.4,NA,NA,809,2022-05-26,2022-05-19,2022-05-23,FALSE,Sentio
 2022-maj,Ipsos,22,3,5,5,32,9,3,18,NA,NA,1569,2022-05-24,2022-05-10,2022-05-22,FALSE,Ipsos
