@@ -8,6 +8,7 @@ handle_tracking_polls(
   polls = NULL,
   correction = "use_last_no_overlap",
   verbose = FALSE,
+  overlap_days = 1L,
   ...
 )
 }

@@ -4,10 +4,13 @@
 \alias{add_tracking_poll_info}
 \title{Add information on tracking polls}
 \usage{
-add_tracking_poll_info(x)
+add_tracking_poll_info(x, overlap_days = 1L)
 }
 \arguments{
 \item{x}{a polls \code{data.frame} with \code{collectPeriodTo} and \code{collectPeriodFrom}.}
+
+\item{overlap_days}{the number of days that can overlap between polls without consider it an overlap. 
+Defaults to 1L.}
 }
 \value{
 \code{overlap_previous_poll}: the poll overlaps with previous polls

@@ -29,10 +29,17 @@ test_that(desc="test()",{
   rm0 <- c(skop0, sifo0, novus0, ipsos0, inizio0)
   rm1 <- c(skop1, sifo1, novus1, ipsos1, inizio1)
   
-  expect_message(tp0 <- handle_tracking_polls(polls = tp, verbose = TRUE))
+  expect_message(tp0 <- handle_tracking_polls(polls = tp, verbose = TRUE, overlap_days = 0L))
   # print(tp[rm0[order(rm0)],c("house","collectPeriodFrom", "collectPeriodTo")])
   expect_equal(tp0, tp[-rm0,])
-
+  
+  expect_message(tp1 <- handle_tracking_polls(polls = tp, verbose = TRUE, overlap_days = 1L))
+  # print(tp[rm1[order(rm1)],c("house","collectPeriodFrom", "collectPeriodTo")])
+  expect_equal(tp1, tp[-rm1,])  
+  # tp$row_no <- 1:nrow(tp)
+  # test <- tp[order(tp$house, tp$PublDate, decreasing = TRUE),c("row_no", "house","collectPeriodFrom", "collectPeriodTo")]
+  # tp1[tp1$house == "Skop",c("house","collectPeriodFrom", "collectPeriodTo")]
+  # x <- tp1[tp1$house == "Skop",]
 })
 
 
