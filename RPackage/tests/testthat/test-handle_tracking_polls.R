@@ -40,6 +40,11 @@ test_that(desc="test()",{
   # test <- tp[order(tp$house, tp$PublDate, decreasing = TRUE),c("row_no", "house","collectPeriodFrom", "collectPeriodTo")]
   # tp1[tp1$house == "Skop",c("house","collectPeriodFrom", "collectPeriodTo")]
   # x <- tp1[tp1$house == "Skop",]
+  
+  expect_message(tp1000 <- handle_tracking_polls(polls = tp, verbose = TRUE, overlap_days = 1000L))
+  expect_equal(tp1000, tp) 
+  expect_error(handle_tracking_polls(polls = tp, verbose = TRUE, overlap_days = -1))
+  
 })
 
 
