@@ -28,20 +28,11 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install libcurl
-        run: sudo apt-get install libcurl4-openssl-dev      
-      - name: Cache R packages
-        if: runner.os != 'Windows'
-        uses: actions/cache@v1
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key: r-${{ hashFiles('DESCRIPTION') }} 
-      - name: Install dependencies
-        run: |
-          Sys.getenv("GITHUB_REF")
-          install.packages(c("remotes"))
-          remotes::install_deps(pkgdir = "RPackage", dependencies = TRUE)
-        shell: Rscript {0}
+          working-directory: "RPackage"
+          extra-packages: any::covr
+          needs: coverage
 
       - name: Test coverage
         run: covr::codecov(quiet = FALSE, path ="RPackage")
