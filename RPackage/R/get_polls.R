@@ -10,7 +10,6 @@ get_polls <-function(as = "data_frame"){
   checkmate::assert_choice(as, c("data_frame", "raw"))
   # Create file path
   file_tmp_path <- paste0(tempdir(), "/polls.csv")
-  
   file_to_dl <- "https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv"   
   
   # Assert access to source
