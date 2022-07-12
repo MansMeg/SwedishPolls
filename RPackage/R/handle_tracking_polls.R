@@ -46,7 +46,7 @@ handle_tracking_polls <- function(polls = NULL, correction = "use_last_no_overla
     removed <- results[!results$last_no_overlap, ]
     if(nrow(removed) > 0){
       message(paste0("Removed overlapping polls (total: ", nrow(removed),")\n"))
-      message(short_poll_info(removed$house, removed$collectPeriodFrom, removed$collectPeriodTo))
+      message(short_poll_info(removed))
     } else {
       message("No polls removed.\n")
     }
@@ -61,8 +61,9 @@ handle_tracking_polls <- function(polls = NULL, correction = "use_last_no_overla
 }
 
 
-short_poll_info <- function(house, from, to){
-  paste0(house, " (", from, "--", to, ")\n")
+short_poll_info <- function(x){
+  assert_polls(x)
+  paste0(x$house, " (", x$PublDate,": ", x$collectPeriodFrom, "--", x$collectPeriodTo, ")\n")
 }
 
 #' Implemented corrections for tracking polls
