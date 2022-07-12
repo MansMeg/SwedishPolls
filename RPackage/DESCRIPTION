@@ -17,3 +17,5 @@ Imports:
   lubridate,
   testthat
 LazyData: true
+Suggests: 
+    covr

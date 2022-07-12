@@ -1,4 +1,7 @@
+<!-- badges: start -->
 ![R](https://github.com/MansMeg/SwedishPolls/actions/workflows/r.yml/badge.svg)
+[![Codecov test coverage](https://codecov.io/gh/MansMeg/SwedishPolls/branch/master/graph/badge.svg)](https://app.codecov.io/gh/MansMeg/SwedishPolls?branch=master)
+<!-- badges: end -->
 
 Swedish polls
 ========================================================
