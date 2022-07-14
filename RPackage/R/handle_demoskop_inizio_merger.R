@@ -22,7 +22,7 @@ handle_demoskop_inizio_polls <- function(polls = NULL){
   if(is.null(polls)){
     polls <- get_polls()
   }
-  assert_polls(polls)
+  assert_polls(polls, columns_to_check = c("house", "PublDate"))
   polls$house <- as.character(polls$house)
   polls_before_start_idx <- min(which(polls$PublDate < as.Date("2019-11-01")))
   polls$house[polls$house == "Demoskop" & 1:nrow(polls) >= polls_before_start_idx] <- "Demoskop (pre 2019-11-01)"

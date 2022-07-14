@@ -20,49 +20,68 @@ handle_tracking_polls <- function(polls = NULL, correction = "use_last_no_overla
     polls <- get_polls()
   }
   assert_polls(polls)
+  checkmate::assert_flag(verbose)
   checkmate::assert_choice(correction, supported_tracking_polls_corrections())
   
-  # Add order
-  polls$row_number <- 1:nrow(polls)
+  if(correction == "use_last_no_overlap"){
+    results <- polls
+    results$last_no_overlap <- use_last_no_overlap_indicator(polls = polls, overlap_days = overlap_days, ...)
   
-  # Iterate over houses
-  results <- list()
-  houses <- as.character(unique(polls$house))
-  for(i in seq_along(houses)){
-    ph <- polls[polls$house == houses[i],]
-    if(nrow(ph) > 1){
-      cnms <- colnames(ph)
-      ph <- add_tracking_poll_info(ph, overlap_days = overlap_days)
-      ph <- use_last_no_overlap(ph, overlap_days = overlap_days)[, c(cnms, "last_no_overlap")]    
-    } else {
-      ph$last_no_overlap <- TRUE
+    if(verbose){
+      removed <- results[!results$last_no_overlap, ]
+      if(nrow(removed) > 0){
+        message(paste0("Removed overlapping polls (total: ", nrow(removed),")\n"))
+        message(short_poll_info(removed))
+      } else {
+        message("No polls removed.\n")
+      }
     }
-    results[[i]] <- ph
+    # Finalize
+    results <- results[results$last_no_overlap,]
+    results$last_no_overlap <- NULL
   }
-  results <- do.call(args = results, rbind)
-  
-  results <- results[order(results$row_number),]
-  if(verbose){
-    removed <- results[!results$last_no_overlap, ]
-    if(nrow(removed) > 0){
-      message(paste0("Removed overlapping polls (total: ", nrow(removed),")\n"))
-      message(short_poll_info(removed))
-    } else {
-      message("No polls removed.\n")
-    }
-  }
-  # Finalize
-  results <- results[results$last_no_overlap,]
-  
-  results$last_no_overlap <- NULL
-  results$row_number <- NULL
+
   rownames(results) <- NULL
   results  
 }
 
+#' Return an indicator variable for last polls without overlap
+#' 
+#' @param polls a polls object with variables \code{house}, \code{collectPeriodFrom}, and \code{collectPeriodTo}.
+#' @param overlap_days the number of days that can overlap between polls without consider it an overlap. 
+#' 
+#' @export
+use_last_no_overlap_indicator <- function(polls, overlap_days = 1L){
+    assert_polls(polls, columns_to_check = c("house", "collectPeriodFrom", "collectPeriodTo"))
+
+    # Add order
+    polls$row_number <- 1:nrow(polls)
+    
+    # Iterate over houses
+    results <- list()
+    houses <- as.character(unique(polls$house))
+    for(i in seq_along(houses)){
+      ph <- polls[polls$house == houses[i],]
+      if(nrow(ph) > 1){
+        cnms <- colnames(ph)
+        ph <- add_tracking_poll_info(ph, overlap_days = overlap_days)
+        ph <- use_last_no_overlap(ph, overlap_days = overlap_days)[, c(cnms, "last_no_overlap")]    
+      } else {
+        ph$last_no_overlap <- TRUE
+      }
+      results[[i]] <- ph
+    }
+    results <- do.call(args = results, rbind)
+    
+    results <- results[order(results$row_number),]
+    results$row_number <- NULL
+    results$last_no_overlap
+}
+
 
 short_poll_info <- function(x){
-  assert_polls(x)
+  assert_polls(x, columns_to_check = c("PublDate", "collectPeriodFrom", "collectPeriodTo"))
+  checkmate::assert_names(names(x), must.include = "PublDate")
   paste0(x$house, " (", x$PublDate,": ", x$collectPeriodFrom, "--", x$collectPeriodTo, ")\n")
 }
 
@@ -133,12 +152,9 @@ use_last_no_overlap <- function(x, overlap_days){
 #' 
 #' @export
 add_tracking_poll_info <- function(x, overlap_days = 1L){
-  checkmate::assert_data_frame(x, min.rows = 2)
-  checkmate::assert_names(names(x), must.include = c("collectPeriodTo", "collectPeriodFrom"))
+  assert_polls(x, columns_to_check = c("house", "collectPeriodFrom", "collectPeriodTo"))
   # Assert that only 1 house is used
   checkmate::assert_true(length(unique(x$house)) == 1L)
-  checkmate::assert_date(x$collectPeriodTo)
-  checkmate::assert_date(x$collectPeriodFrom)
   checkmate::assert_integerish(overlap_days, len = 1, lower = 0)
   
   # Store order
@@ -195,11 +211,29 @@ add_tracking_poll_info <- function(x, overlap_days = 1L){
   x
 }
 
+#' Assert a polls \code{data.frame}
+#' 
+#' @param x the object to assess
+#' @param columns_to_check what columns should be specifically checked. Defaults to none.
+#' 
+assert_polls <- function(x, columns_to_check = NULL){
+  checkmate::assert_data_frame(x, min.rows = 2)
+  checkmate::assert_subset(columns_to_check, choices = polls_column_names(), empty.ok = TRUE)
+  checkmate::assert_names(names(x), must.include = columns_to_check)
+  if("collectPeriodFrom" %in% columns_to_check){
+    checkmate::assert_date(x$collectPeriodFrom)
+  }
+  if("collectPeriodTo" %in% columns_to_check){
+    checkmate::assert_date(x$collectPeriodTo)
+  }
+  if("PublDate" %in% columns_to_check){
+    checkmate::assert_date(x$PublDate)
+  } 
+  if("house" %in% columns_to_check){
+    checkmate::assert_true(is.factor(x$house) | is.character(x$house))
+  } 
+}
 
-assert_polls <- function(x){
-  checkmate::assert_data_frame(x)
-  checkmate::assert_names(names(x), must.include = c("PublYearMonth","Company","M","L","C","KD","S","V","MP","SD","FI","Uncertain","n","PublDate","collectPeriodFrom","collectPeriodTo","approxPeriod","house"))
-  checkmate::assert_date(x$collectPeriodFrom)
-  checkmate::assert_date(x$collectPeriodTo)
-  
+polls_column_names <- function(){
+  c("PublYearMonth", "Company", "M", "L", "C", "KD", "S", "V", "MP", "SD", "FI", "Uncertain", "n", "PublDate", "collectPeriodFrom", "collectPeriodTo", "approxPeriod", "house")
 }
