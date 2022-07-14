@@ -9,6 +9,13 @@ test_that(desc="test()",{
   expect_message(tpa <- handle_tracking_polls(tp, verbose = TRUE))
   expect_silent(tpb <- handle_tracking_polls(tp))
   expect_equal(tpa, tpb)
+  
+  tpc <- tp
+  expect_silent(tpc$last <- use_last_no_overlap_indicator(tp))
+  tpc <- tpc[tpc$last,]
+  tpc$last <- NULL
+  expect_equal(tpa, tpc)
+  
 
   # test that the correct stuff is removed
   # rows that should be removed 
