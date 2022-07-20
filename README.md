@@ -55,10 +55,10 @@ If you want to download the raw CSV file, you can find the file [here](https://g
 Below there are codes to read the data directly into different statistical software.
 
 #### Using R
-To download this file directly to R use the RPackage Swedish polls with the function `get_polls()`:
+To download this file directly to R use the RPackage `SwedishPolls` with the function `get_polls()`:
 
 ```r 
-devtools::install_github("MansMeg/SwedishPolls", subdir = "RPackage")
+remotes::install_github("MansMeg/SwedishPolls", subdir = "RPackage")
 polls <- SwedishPolls::get_polls()
 ```
 
