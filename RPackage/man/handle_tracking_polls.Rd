@@ -21,6 +21,8 @@ corrections that can be used.}
 
 \item{verbose}{should information on the handling be printed as messages? Defaults to \code{FALSE}.}
 
+\item{overlap_days}{the number of days that can overlap between polls without consider it an overlap.}
+
 \item{...}{further arguments supplied to the tracking polls correction function(s).}
 }
 \description{

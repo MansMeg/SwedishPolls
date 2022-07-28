@@ -12,6 +12,7 @@
 #' See \code{supported_tracking_polls_corrections()} for details on what
 #' corrections that can be used.
 #' @param verbose should information on the handling be printed as messages? Defaults to \code{FALSE}. 
+#' @param overlap_days the number of days that can overlap between polls without consider it an overlap. 
 #' @param ... further arguments supplied to the tracking polls correction function(s).
 #' 
 #' @export
