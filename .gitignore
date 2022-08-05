@@ -5,3 +5,4 @@
 *.Rproj
 node_modules
 *.csv#
+poll_reviews/*
