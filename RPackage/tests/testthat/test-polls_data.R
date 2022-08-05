@@ -5,8 +5,9 @@ test_that(desc="get_polls()",{
   
   # Test to download dataset
   expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
-  expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
-  
+  if(file.exists(SwedishPolls:::get_path_to_polls())){
+    expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  }
   
   # Test of dataset structure
   expect_s3_class(dat, "tbl_df")
