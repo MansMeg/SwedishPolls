@@ -5,7 +5,8 @@ test_that(desc="get_polls()",{
   
   # Test to download dataset
   expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
-  # dat <- SwedishPolls:::get_polls_local(as = "data_frame")
+  expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  
   
   # Test of dataset structure
   expect_s3_class(dat, "tbl_df")
@@ -23,6 +24,9 @@ test_that(desc="get_polls()",{
   expect_true(all(dat$collectPeriodFrom <= dat$collectPeriodTo, na.rm = TRUE), info = "collectPeriodFrom > dat$collectPeriodTo")
   expect_true(all((dat$collectPeriodTo <= dat$PublDate)[1:300], na.rm = TRUE), info = "dat$collectPeriodTo > dat$PublDate") # Previous data can contain errors
 
+  # dat300 <- dat[1:300,];dat300[!(dat300$collectPeriodTo <= dat300$PublDate),]
+
+  
   # Test specific variables
   expect_true(all(nchar(dat$PublYearMonth) == 8))
   
