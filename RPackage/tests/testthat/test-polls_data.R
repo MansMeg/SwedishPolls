@@ -5,7 +5,7 @@ test_that(desc="get_polls()",{
   
   # Test to download dataset
   expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
-  if(file.exists(SwedishPolls:::get_path_to_polls())){
+  if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
     expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
   }
   
