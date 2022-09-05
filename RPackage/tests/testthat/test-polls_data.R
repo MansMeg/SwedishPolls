@@ -7,6 +7,8 @@ test_that(desc="get_polls()",{
   expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
   if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
     expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  } else {
+    warning("main branch version of polls data is used.")
   }
   
   # Test of dataset structure
@@ -46,6 +48,33 @@ test_that(desc="get_polls() raw",{
   expect_true(all(!grepl(x = dat[1:50], pattern = ",,")), info = "Missing values not NA.")
   
 })
+
+
+test_that(desc="throw warnings",{
+  
+  expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
+  if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
+    expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  } else {
+    warning("main branch version of polls data is used.")
+  }
+  
+  # n is identical since last poll
+  houses <- unique(as.character(dat[1:100,]$house))
+  parties <- c("M", "L", "C", "KD", "S","V", "MP", "SD")
+  for(i in seq_along(houses)){
+    tmp_dat <- dat[dat$house == houses[i],]
+    tmp_dat <- tmp_dat[order(tmp_dat$PublDate, decreasing = TRUE),]
+    if(nrow(tmp_dat) < 2) next
+    tmp_dat <- tmp_dat[1:2,]
+    if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")
+    for(j in seq_along(parties)){
+      if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) warning("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
+    }
+  }
+  
+})
+
 
 cat("\n")
 system("pwd")
