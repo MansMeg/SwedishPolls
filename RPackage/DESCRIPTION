@@ -14,8 +14,8 @@ Imports:
   checkmate,
   dplyr,
   httr,  
-  lubridate,
-  testthat
+  lubridate
 LazyData: true
 Suggests: 
-    covr
+  covr,
+  testthat    
