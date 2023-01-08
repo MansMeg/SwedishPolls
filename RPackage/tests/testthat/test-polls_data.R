@@ -67,7 +67,11 @@ test_that(desc="throw warnings",{
     tmp_dat <- tmp_dat[order(tmp_dat$PublDate, decreasing = TRUE),]
     if(nrow(tmp_dat) < 2) next
     tmp_dat <- tmp_dat[1:2,]
-    if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")
+    if(any(is.na(tmp_dat$n))) {
+      warning("Polls from ", houses[i], " have missing 'n'.")
+    } else {
+      if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")    
+    }
     for(j in seq_along(parties)){
       if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) warning("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
     }
