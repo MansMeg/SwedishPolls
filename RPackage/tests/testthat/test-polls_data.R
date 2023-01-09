@@ -59,6 +59,13 @@ test_that(desc="throw warnings",{
     warning("main branch version of polls data is used.")
   }
   
+  # Manually checked warnings (that are ignored)
+  ignore_house_PublDate <- function(house, PublDate){
+    if(house == "Skop" & PublDate == "2022-09-10") return(TRUE)
+    if(house == "Infostat" & PublDate == "2022-09-08") return(TRUE)
+    return(FALSE)
+  }
+  
   # n is identical since last poll
   houses <- unique(as.character(dat[1:100,]$house))
   parties <- c("M", "L", "C", "KD", "S","V", "MP", "SD")
@@ -68,18 +75,17 @@ test_that(desc="throw warnings",{
     if(nrow(tmp_dat) < 2) next
     tmp_dat <- tmp_dat[1:2,]
     if(any(is.na(tmp_dat$n))) {
-      warning("Polls from ", houses[i], " have missing 'n'.")
+      if(!ignore_house_PublDate(houses[i], tmp_dat$PublDate[1])){
+        warning("Polls from ", houses[i], " have missing 'n'.")
+      }
     } else {
-      if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")    
+      if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")
     }
     for(j in seq_along(parties)){
+      if(ignore_house_PublDate(houses[i], tmp_dat$PublDate[1])) next
       if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) warning("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
     }
   }
   
 })
 
-
-cat("\n")
-system("pwd")
-cat("\n")
