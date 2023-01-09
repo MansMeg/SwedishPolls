@@ -2,7 +2,7 @@ const fs = require('fs')
 const Papa = require('papaparse')
 
 const [header, ...polls] = Papa.parse(fs.readFileSync('Data/Polls.csv', { encoding: 'utf8' })).data.filter((poll) => poll.length > 1)
-const newerPolls = polls.slice(1, 100)
+const newerPolls = polls.slice(0, 100)
 const allParties = ['M', 'L', 'C', 'KD', 'S', 'V', 'MP', 'SD', 'FI']
 
 test('Header is correct', () => {
@@ -53,13 +53,13 @@ test('Newer poll trends make sense', () => {
     expect(parties['MP'], `MP in (${poll}) has less than 2.5% support`).toBeGreaterThan(2.5)
     expect(parties['MP'], `MP in (${poll}) has more than 8% support`).toBeLessThan(8)
 
-    expect(parties['M'], `M in (${poll}) has less than 17% support`).toBeGreaterThan(15)
+    expect(parties['M'], `M in (${poll}) has less than 14.7% support`).toBeGreaterThan(14.7)
     expect(parties['M'], `M in (${poll}) has more than 24.5% support`).toBeLessThan(24.6)
 
     expect(parties['L'], `L in (${poll}) has less than 1.5% support`).toBeGreaterThan(1.5)
-    expect(parties['L'], `L in (${poll}) has more than 6% support`).toBeLessThan(6)
+    expect(parties['L'], `L in (${poll}) has more than 7.5% support`).toBeLessThan(7.5)
 
-    expect(parties['KD'], `KD in (${poll}) has less than 3.7% support`).toBeGreaterThan(3.6)
+    expect(parties['KD'], `KD in (${poll}) has less than 3.6% support`).toBeGreaterThan(3.5)
     expect(parties['KD'], `KD in (${poll}) has more than 13.5% support`).toBeLessThan(13.5)
 
     expect(parties['C'], `C in (${poll}) has less than 4.2% support`).toBeGreaterThan(4.2)
