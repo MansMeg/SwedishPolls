@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use SwedishPolls in an academic publication, please cite it as below. Also include the git hash for the version you used for full reproducibility. "
+authors:
+  - family-names: Magnusson
+    given-names: Måns
+  - family-names: Finnäs
+    given-names: Jens
+title: "SwedishPolls: Swedish opinion polls from 2002 until today [git hash]"
+date-released: 2023-01-07

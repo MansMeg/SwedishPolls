@@ -7,6 +7,8 @@ test_that(desc="get_polls()",{
   expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
   if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
     expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  } else {
+    warning("main branch version of polls data is used.")
   }
   
   # Test of dataset structure
@@ -47,6 +49,45 @@ test_that(desc="get_polls() raw",{
   
 })
 
-cat("\n")
-system("pwd")
-cat("\n")
+
+test_that(desc="throw warnings",{
+  
+  expect_silent(dat <- SwedishPolls:::get_polls(as = "data_frame"))
+  if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
+    expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
+  } else {
+    warning("main branch version of polls data is used.")
+  }
+  
+  # Manually checked (and are ignored)
+  ignore_column_house_PublDate <- function(column, house, PublDate){
+    # V is the same for both polls
+    if(column == "V" & house == "Skop" & PublDate == "2022-09-10") return(TRUE)
+    # As of 2023-01-09 there are no sample size
+    if(column == "n" &house == "Infostat" & PublDate == "2022-09-08") return(TRUE)
+    return(FALSE)
+  }
+  
+  # n is identical since last poll
+  houses <- unique(as.character(dat[1:100,]$house))
+  parties <- c("M", "L", "C", "KD", "S","V", "MP", "SD")
+  for(i in seq_along(houses)){
+    tmp_dat <- dat[dat$house == houses[i],]
+    tmp_dat <- tmp_dat[order(tmp_dat$PublDate, decreasing = TRUE),]
+    if(nrow(tmp_dat) < 2) next
+    tmp_dat <- tmp_dat[1:2,]
+    if(any(is.na(tmp_dat$n))) {
+      if(!ignore_column_house_PublDate("n", houses[i], tmp_dat$PublDate[1])){
+        stop("Polls from ", houses[i], " have missing 'n'.")
+      }
+    } else {
+      if(tmp_dat$n[1] == tmp_dat$n[2]) stop("Last two polls from ", houses[i], " have identical 'n'.")
+    }
+    for(j in seq_along(parties)){
+      if(ignore_column_house_PublDate(parties[j], houses[i], tmp_dat$PublDate[1])) next
+      if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) stop("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
+    }
+  }
+  
+})
+
