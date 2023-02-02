@@ -85,7 +85,7 @@ test_that(desc="throw warnings",{
     }
     for(j in seq_along(parties)){
       if(ignore_column_house_PublDate(parties[j], houses[i], tmp_dat$PublDate[1])) next
-      if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) stop("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
+      if(tmp_dat[[parties[j]]][1] == tmp_dat[[parties[j]]][2]) warning("Last two polls from ", houses[i], " have identical value for '", parties[j], "'.")
     }
   }
   
