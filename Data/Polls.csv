@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2023-maj,Novus,20.2,3.2,4.4,3.7,38.4,7.5,4.7,16.4,NA,NA,3243,2023-05-04,2023-04-03,2023-04-30,FALSE,Novus
 2023-apr,Ipsos,19,4,5,3,36,9,4,18,NA,NA,1588,2023-04-25,2023-04-11,2023-04-23,FALSE,Ipsos
 2023-apr,Sifo,19.6,3.3,4.3,3.8,36.9,7.1,4.5,18.8,NA,NA,3671,2023-04-15,2023-04-03,2023-04-13,FALSE,Sifo
 2023-apr,Demoskop,21.8,3.5,4.7,3.9,35.3,7.9,2.9,18.6,NA,NA,2026,2023-04-06,2023-03-24,2023-04-03,FALSE,Demoskop
