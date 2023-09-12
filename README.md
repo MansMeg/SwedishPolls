@@ -1,6 +1,8 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/MansMeg/SwedishPolls/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MansMeg/SwedishPolls/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/MansMeg/SwedishPolls/branch/master/graph/badge.svg)](https://app.codecov.io/gh/MansMeg/SwedishPolls?branch=master)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
 Swedish polls
@@ -48,6 +50,11 @@ Just fork the repository and feel free to send me a merge request with your sugg
 [Simon Sigurdhsson](https://github.com/urdh)
 
 [Hampus Joakim Nilsson](https://github.com/hjnilsson)
+
+[Henrik Ekegren Oscarsson](https://ekengrenoscarsson.com/) and [the Swedish National Election Studies](https://www.gu.se/en/swedish-national-election-studies)
+
+## License
+The data in the repository is released under CC0 (public domain) and code is released under MIT.
 
 ### To use the data
 If you want to download the raw CSV file, you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, click "Raw".
