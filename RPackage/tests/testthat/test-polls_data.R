@@ -89,5 +89,12 @@ test_that(desc="throw warnings",{
     }
   }
   
+  # Test that no new house has been added
+  tab <- table(dat$house)
+  tab <- tab[!names(tab) %in% c("TV4")]
+  if(any(tab == 1)){
+    warning("'", names(tab[tab==1]), "' is a new house.")
+  }
+  
 })
 
