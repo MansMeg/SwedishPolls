@@ -1,8 +1,8 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/MansMeg/SwedishPolls/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/MansMeg/SwedishPolls/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/MansMeg/SwedishPolls/branch/master/graph/badge.svg)](https://app.codecov.io/gh/MansMeg/SwedishPolls?branch=master)
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 <!-- badges: end -->
 
 Swedish polls
