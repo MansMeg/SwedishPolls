@@ -56,6 +56,9 @@ Just fork the repository and feel free to send me a merge request with your sugg
 ## License
 The data in the repository is released under CC0 (public domain) and code is released under MIT.
 
+## Sources
+We are now starting to build up sources to the polls data since we sometimes need to go back to individual polls to double check them. URL and sources can be found in the Sources folder.
+
 ### To use the data
 If you want to download the raw CSV file, you can find the file [here](https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv). To download it, click "Raw".
 
