@@ -20,8 +20,15 @@ test_that(desc="get_polls()",{
  
   # Test consistency
   incorrect_polls <- dat$PublYearMonth == "2012-jun" & dat$Company == "YouGov"
-  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 87.9, upper = 100, info = "Parties do not sum to 87.9 < x < 100")
-  checkmate::expect_numeric(rowSums(dat[1:100, 3:11], na.rm = TRUE), lower = 87.9, upper = 100, info = "Parties do not sum to 87.9 < x < 100")
+  # Early polls rounded to closest 0.5%
+  incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1968-dec" & dat$Company == "Sifo"
+  incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-dec" & dat$Company == "Sifo"
+  incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-sep" & dat$Company == "Sifo"
+  incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-aug" & dat$Company == "Sifo"
+  incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-jun" & dat$Company == "Sifo"
+  
+  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 87.9, upper = 100.01, info = "Parties do not sum to 87.9 < x <= 100")
+  checkmate::expect_numeric(rowSums(dat[1:100, 3:11], na.rm = TRUE), lower = 95.0, upper = 100, info = "Parties do not sum to 95 < x < 100")
   checkmate::expect_integerish(dat$n, lower = 500)
   
   expect_true(all(dat$collectPeriodFrom <= dat$collectPeriodTo, na.rm = TRUE), info = "collectPeriodFrom > dat$collectPeriodTo")
