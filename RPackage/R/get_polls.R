@@ -62,10 +62,22 @@ get_path_to_polls <- function(){
 #' @keywords Internal
 read_polls_csv <- function(path){
   df <- utils::read.csv(path, stringsAsFactors = FALSE)
-  df$Company <- factor(df$Company)
-  df$PublDate <- lubridate::ymd(df$PublDate)
-  df$collectPeriodFrom <- lubridate::ymd(df$collectPeriodFrom)
-  df$collectPeriodTo <- lubridate::ymd(df$collectPeriodTo)
-  df$house <- factor(df$house)
-  dplyr::as_tibble(df)
+  as_polls(df)
 }
+
+#' Convert a table to a polls tbl_df
+#' @param x an object to convert
+#' @export
+as_polls <- function(x){
+  checkmate::assert_names(names(x), must.include = c("Company", "PublDate", "collectPeriodFrom", "collectPeriodTo", "house"))
+  x$Company <- factor(x$Company)
+  x$PublDate <- lubridate::ymd(x$PublDate)
+  x$collectPeriodFrom <- lubridate::ymd(x$collectPeriodFrom)
+  x$collectPeriodTo <- lubridate::ymd(x$collectPeriodTo)
+  x$house <- factor(x$house)
+  x <- dplyr::as_tibble(x)
+  assert_polls(x)
+  x
+}
+
+
