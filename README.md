@@ -47,11 +47,13 @@ Just fork the repository and feel free to send me a merge request with your sugg
 
 
 ## Thanks to
-[Simon Sigurdhsson](https://github.com/urdh)
+[Simon Sigurdhsson](https://github.com/urdh) for collecting polls.
 
-[Hampus Joakim Nilsson](https://github.com/hjnilsson)
+[Hampus Joakim Nilsson](https://github.com/hjnilsson) for collecting polls.
 
-[Henrik Ekegren Oscarsson](https://ekengrenoscarsson.com/) and [the Swedish National Election Studies](https://www.gu.se/en/swedish-national-election-studies)
+[Henrik Ekegren Oscarsson](https://ekengrenoscarsson.com/) and [the Swedish National Election Studies](https://www.gu.se/en/swedish-national-election-studies) for contributing historical Sifo polls.
+
+Leonora Uddhammar at [Statistics Sweden](https://www.scb.se) for contributing historical information on Statistics Swedens poll (Partisympatiundersökningen).
 
 ## License
 The data in the repository is released under CC0 (public domain) and code is released under MIT.
