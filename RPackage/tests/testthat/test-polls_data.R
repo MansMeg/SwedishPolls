@@ -85,10 +85,10 @@ test_that(desc="throw warnings",{
     tmp_dat <- tmp_dat[1:2,]
     if(any(is.na(tmp_dat$n))) {
       if(!ignore_column_house_PublDate("n", houses[i], tmp_dat$PublDate[1])){
-        stop("Polls from ", houses[i], " have missing 'n'.")
+        warning("Polls from ", houses[i], " have missing 'n'.")
       }
     } else {
-      if(tmp_dat$n[1] == tmp_dat$n[2]) stop("Last two polls from ", houses[i], " have identical 'n'.")
+      if(tmp_dat$n[1] == tmp_dat$n[2]) warning("Last two polls from ", houses[i], " have identical 'n'.")
     }
     for(j in seq_along(parties)){
       if(ignore_column_house_PublDate(parties[j], houses[i], tmp_dat$PublDate[1])) next

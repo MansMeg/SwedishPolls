@@ -9,13 +9,25 @@
 #' @export
 order_polls <- function(x, decreasing = TRUE){
   assert_polls(x)
-  numms <- integer(length(x$PublYearMonth))
+  yyyymm <- publyearmonth_to_yyyymm(x = x$PublYearMonth)
+  res <- as.numeric(yyyymm)+(1/1:length(yyyymm))
+  x[order(res, decreasing = decreasing),]
+}
+
+publyearmonth_to_yyyymm <- function(x){
+  numms <- integer(length(x))
   msswe <- months_abb_swe()
-  mns <- substr(x$PublYearMonth,6,8)
+  x <- gsub(x = x, pattern = "K1", replacement = "jan")
+  x <- gsub(x = x, pattern = "K2", replacement = "apr")
+  x <- gsub(x = x, pattern = "K3", replacement = "jul")
+  x <- gsub(x = x, pattern = "K4", replacement = "okt")
+  checkmate::assert_subset(substr(x,6,8), msswe)
+  
+  mns <- substr(x,6,8)
   for(i in seq_along(numms)){
     numms[i] <- which(msswe%in%mns[i])
   }
   moint <- stringr::str_pad(numms, width = 2, side = "left", pad = "0")
-  res <- as.numeric(paste0(substr(x$PublYearMonth,1,4),moint))+(1/1:length(moint))
-  x[order(res, decreasing = decreasing),]
+  paste0(substr(x,1,4),moint)
 }
+
