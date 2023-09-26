@@ -55,6 +55,8 @@ Just fork the repository and feel free to send me a merge request with your sugg
 
 Leonora Uddhammar at [Statistics Sweden](https://www.scb.se) for contributing historical information on Statistics Swedens poll (Partisympatiundersökningen).
 
+Pelle Ahlin at [Demoskop](https://www.demoskop.se) for contributing historical information on historical poll from Demoskop.
+
 ## License
 The data in the repository is released under CC0 (public domain) and code is released under MIT.
 
