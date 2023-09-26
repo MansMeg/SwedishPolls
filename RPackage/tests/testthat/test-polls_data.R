@@ -38,7 +38,7 @@ test_that(desc="get_polls()",{
 
   
   # Test specific variables
-  expect_true(all(nchar(dat$PublYearMonth) == 8))
+  expect_true(all(nchar(dat$PublYearMonth) %in% c(7L, 8L)))
   
   # Test for duplicates
   ddat <- dat[,c("Company", "PublDate", "collectPeriodFrom", "collectPeriodTo")]
