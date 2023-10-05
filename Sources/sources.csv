@@ -1,4 +1,4 @@
-Company;PublYearMonth;URL
+Company;PublYearMonth;source
 Demoskop;2020-mar;https://www.aftonbladet.se/nyheter/samhalle/a/XgAjqE/succe-for-sjostedt-hogsta-stodet-pa-15-ar
 Sifo;2020-feb;https://web.archive.org/web/20200224165129/https://www.kantarsifo.se/sites/default/files/reports/documents/valjarbarometer_februari_2020.pdf
 Sifo;2018-maj;https://web.archive.org/web/20201025025709/https://www.kantarsifo.se/sites/default/files/reports/documents/vb_maj_2018.pdf
@@ -210,3 +210,27 @@ Demoskop;1990-K4;Data from Demoskop
 Demoskop;1990-K3;Data from Demoskop
 Demoskop;1990-K2;Data from Demoskop
 Demoskop;1990-K1;Data from Demoskop
+TEMO;2003-maj;DN-2003-05-23, s.8
+TEMO;2003-apr;DN-2003-04-25, s.11
+TEMO;2003-mar;DN-2003-03-28, s.8
+TEMO;2003-feb;DN-2003-02-28, s.8
+TEMO;2003-jan;DN-2003-01-31, s.9
+TEMO;2002-okt;DN-2002-10-25, s.16
+TEMO;2002-feb;DN-2002-02-22, s.10
+TEMO;2001-dec;DN-2001-12-21, s.5
+TEMO;2001-nov;DN-2001-11-30, s.11
+TEMO;2001-okt;DN-2001-10-26, s.17
+TEMO;2001-sep;DN-2001-09-28, s.11
+TEMO;2001-aug;DN-2001-08-31, s.9
+TEMO;2001-jun;DN-2001-06-29, s.16
+TEMO;2001-jun;DN-2001-06-01, s.15
+TEMO;2001-apr;DN-2001-04-27, s.15
+TEMO;2001-mar;DN-2001-03-30, s.13
+TEMO;2001-feb;DN-2001-02-23, s.12
+TEMO;2000-sep;DN-2000-09-29, s.12
+TEMO;2000-sep;DN-2000-09-01, s.12
+TEMO;2000-maj;DN-2000-05-26, s.12
+TEMO;2000-apr;DN-2000-04-28, s.10
+TEMO;2000-mar;DN-2000-03-31, s.10
+TEMO;2000-feb;DN-2000-02-25, s.11
+TEMO;2000-jan;DN-2000-01-28, s.10

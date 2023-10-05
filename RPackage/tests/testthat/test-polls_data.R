@@ -11,6 +11,8 @@ test_that(desc="get_polls()",{
     warning("main branch version of polls data is used.")
   }
   
+  # dat <- SwedishPolls:::get_polls_local(as = "data_frame")
+  
   # Test of dataset structure
   expect_s3_class(dat, "tbl_df")
   checkmate::expect_names(names(dat), permutation.of = c('PublYearMonth', 'Company', 'M', 'L', 'C', 'KD', 'S', 'V', 'MP', 'SD', 'FI', 'Uncertain', 'n', 'PublDate', 'collectPeriodFrom', 'collectPeriodTo', 'approxPeriod', 'house'))
