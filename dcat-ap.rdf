@@ -56,7 +56,7 @@
     <dcat:Distribution rdf:about="https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv">
         <dcterms:title xml:lang="sv">Svenska opinionsundersökningar</dcterms:title>
         <dcterms:title xml:lang="en">Swedish polls</dcterms:title>
-        <dcterms:description xml:lang="sv">Samtliga svenska opinionsundersökningar som i strukturerat format</dcterms:description>
+        <dcterms:description xml:lang="sv">Samtliga svenska opinionsundersökningar i strukturerat format</dcterms:description>
         <dcterms:description xml:lang="en">All Swedish polls in structured format</dcterms:description>
         <dcterms:format>text/csv</dcterms:format>
         <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv" />
