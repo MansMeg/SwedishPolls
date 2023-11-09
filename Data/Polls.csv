@@ -1,4 +1,6 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2023-nov,Sentio,17.2,2.5,3.4,4.3,36,8.9,3.9,22.3,NA,NA,1000,2023-11-09,2023-11-03,2023-11-07,FALSE,Sentio
+2023-nov,Demoskop,18.9,2.3,4.7,3.2,36.2,7.3,3.7,21.6,NA,NA,2506,2023-11-08,2023-10-22,2023-11-05,FALSE,Demoskop
 2023-nov,Sifo,17.4,3,3.7,3.5,37.6,7.3,4.7,21.2,NA,NA,3073,2023-11-02,2023-10-16,2023-10-29,FALSE,Sifo
 2023-nov,Ipsos,19,2,4,3,36,9,5,21,NA,NA,1643,2023-11-01,2023-10-16,2023-10-30,FALSE,Ipsos
 2023-okt,Indikator,16.1,2.3,4.1,2.9,37.9,8.1,4.8,22,NA,NA,2315,2023-10-27,2023-10-03,2023-10-25,FALSE,Indikator
