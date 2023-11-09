@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <dcat:Catalog rdf:about="https://github.com/MansMeg/SwedishPolls">
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-27</dcterms:modified>
+        <dcterms:title xml:lang="sv">Svenska Opinionsundersökningar</dcterms:title>
+        <dcterms:description xml:lang="sv">Svenska valundersökningar från 1968 till idag</dcterms:description>
+        <dcterms:title xml:lang="en">Swedish Polls</dcterms:title>
+        <dcterms:description xml:lang="en">Swedish opinion polls from 1968 until today</dcterms:description>
+        <dcterms:publisher rdf:resource="https://github.com/MansMeg/SwedishPolls" />
+        <dcat:dataset rdf:resource="https://github.com/MansMeg/SwedishPolls" />
+        <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+        <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-08</dcterms:issued>
+        <dcat:themeTaxonomy rdf:resource="http://publications.europa.eu/resource/authority/data-theme" />
+        <dcterms:temporal>
+            <dcterms:PeriodOfTime rdf:nodeID="node1e07u274fx1">
+                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-08</dcat:startDate>
+            </dcterms:PeriodOfTime>
+        </dcterms:temporal>
+    </dcat:Catalog>
+    <foaf:Agent rdf:about="https://github.com/MansMeg/SwedishPolls">
+        <foaf:name>Swedish Opinion Polls</foaf:name>
+        <dcterms:type rdf:resource="http://purl.org/adms/publishertype/NonGovernmentalOrganisation" />
+    </foaf:Agent>
+    <rdf:Description rdf:about="http://sws.geonames.org/2661886">
+        <rdfs:label xml:lang="se">Sverige</rdfs:label>
+        <rdfs:label xml:lang="en">Sweden</rdfs:label>
+    </rdf:Description>
+    <dcat:Dataset rdf:about="https://github.com/MansMeg/SwedishPolls">
+        <dcterms:title xml:lang="sv">Svenska opinionsundersökningar</dcterms:title>
+        <dcterms:title xml:lang="en">Swedish Polls</dcterms:title>
+        <dcterms:description xml:lang="sv">Svenska valundersökningar från 1968 till idag</dcterms:description>
+        <dcterms:description xml:lang="en">Swedish opinion polls from 1968 until today</dcterms:description>
+        <dcterms:publisher rdf:resource="https://github.com/MansMeg/SwedishPolls" />
+        <dcat:distribution rdf:resource="https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv" />
+        <dcterms:spatial rdf:resource="http://sws.geonames.org/2661886" />
+        <dcat:keyword xml:lang="sv">Opinionsundersökning</dcat:keyword>
+        <dcat:keyword xml:lang="en">Poll</dcat:keyword>
+        <dcat:keyword xml:lang="sv">Val</dcat:keyword>
+        <dcat:keyword xml:lang="en">Election</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE" />
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-08</dcterms:issued>
+        <dcat:contactPoint rdf:resource="https://github.com/MansMeg/SwedishPolls" />
+        <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+        <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+        <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/CONT"/>
+        <foaf:page rdf:resource="https://github.com/MansMeg/SwedishPolls"/>
+    </dcat:Dataset>
+    <dcat:Distribution rdf:about="https://github.com/MansMeg/SwedishPolls/blob/master/Data/Polls.csv">
+        <dcterms:title xml:lang="sv">Svenska opinionsundersökningar</dcterms:title>
+        <dcterms:title xml:lang="en">Swedish polls</dcterms:title>
+        <dcterms:description xml:lang="sv">Samtliga svenska opinionsundersökningar i strukturerat format</dcterms:description>
+        <dcterms:description xml:lang="en">All Swedish polls in structured format</dcterms:description>
+        <dcterms:format>text/csv</dcterms:format>
+        <dcat:accessURL rdf:resource="https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv" />
+        <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/" />
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/MansMeg/SwedishPolls/master/Data/Polls.csv" />
+    </dcat:Distribution>
+</rdf:RDF>
