@@ -116,10 +116,9 @@ test_that(desc="throw warnings",{
   
 })
 
-
-
 test_that(desc="check modified date",{
   expect_silent(dcat_ap_rdf_modified_date <- SwedishPolls:::get_dcat_ap_rdf_modified_date())
+  print(dcat_ap_rdf_modified_date)
   expect_true(abs(as.integer(Sys.Date()-dcat_ap_rdf_modified_date)) < 14, info = "Please update 'dcterms:modified' in 'dcat-ap.rdf'")
 })
 
