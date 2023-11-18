@@ -19,7 +19,10 @@ find_file_by_traversing <- function(start_dir = getwd(), file_to_find = "dcat-ap
 #' 
 get_dcat_ap_rdf_modified_date <- function(){
   fp <- find_file_by_traversing(file_to_find = "dcat-ap.rdf")
-  if(is.null(fp)) stop("Cant find 'dcat-ap.rdf'")
+  if(is.null(fp)) {
+    warning("Cant find 'dcat-ap.rdf'")
+    return(NULL)
+    }
   x <- readLines(fp)
   slot <- x[grepl("dcterms:modified", x = x)]
   # Regular expression to match dates in the format YYYY-MM-DD
