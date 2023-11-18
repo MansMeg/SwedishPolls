@@ -8,7 +8,8 @@ test_that(desc="get_polls()",{
   if(!inherits(try(SwedishPolls:::get_path_to_polls(), silent = TRUE), "try-error")){
     expect_silent(dat <- SwedishPolls:::get_polls_local(as = "data_frame"))
   } else {
-    warning("main branch version of polls data is used.")
+    warning("Skip tests of data consistency.")
+    skip()
   }
   
   # dat <- SwedishPolls:::get_polls_local(as = "data_frame")
