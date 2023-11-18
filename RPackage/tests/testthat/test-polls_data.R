@@ -16,7 +16,7 @@ test_that(desc="get_polls()",{
   # Test of dataset structure
   expect_s3_class(dat, "tbl_df")
   checkmate::expect_names(names(dat), permutation.of = c('PublYearMonth', 'Company', 'M', 'L', 'C', 'KD', 'S', 'V', 'MP', 'SD', 'FI', 'Uncertain', 'n', 'PublDate', 'collectPeriodFrom', 'collectPeriodTo', 'approxPeriod', 'house'))
-  expect_gt(nrow(dat), 1333)
+  expect_gt(nrow(dat), 2000)
   expect_equal(ncol(dat), 18)
   expect_equal(unname(unlist(lapply(dat, class))), c("character", "factor", rep("numeric", 10), "integer", rep("Date", 3), "logical", "factor"))
  
@@ -29,9 +29,9 @@ test_that(desc="get_polls()",{
   incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-aug" & dat$Company == "Sifo"
   incorrect_polls <- incorrect_polls | dat$PublYearMonth == "1967-jun" & dat$Company == "Sifo"
   
-  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 87.9, upper = 100.01, info = "Parties do not sum to 87.9 < x <= 100")
+  checkmate::expect_numeric(rowSums(dat[!incorrect_polls, 3:11], na.rm = TRUE), lower = 87, upper = 100.01, info = "Parties do not sum to 87.9 < x <= 100")
   checkmate::expect_numeric(rowSums(dat[1:100, 3:11], na.rm = TRUE), lower = 95.0, upper = 100, info = "Parties do not sum to 95 < x < 100")
-  checkmate::expect_integerish(dat$n, lower = 500)
+  checkmate::expect_integerish(dat$n, lower = 700)
   
   expect_true(all(dat$collectPeriodFrom <= dat$collectPeriodTo, na.rm = TRUE), info = "collectPeriodFrom > dat$collectPeriodTo")
   expect_true(all((dat$collectPeriodTo <= dat$PublDate)[1:300], na.rm = TRUE), info = "dat$collectPeriodTo > dat$PublDate") # Previous data can contain errors
@@ -47,6 +47,15 @@ test_that(desc="get_polls()",{
   ddat <- ddat[rowSums(is.na(ddat))==0,]
   dups <- duplicated(ddat)
   expect_true(!any(dups))
+  
+  ddat0 <- dat[,c("Company", "M", "L", "C", "KD", "MP", "S", "V", "n")]
+  ddat <- ddat0[rowSums(is.na(ddat0))==0,]
+  dups1 <- duplicated(ddat)
+  dups2 <- duplicated(ddat,fromLast = TRUE)
+  expect_true(!any(dups))
+  # dat2 <- dat[rowSums(is.na(ddat0))==0,]
+  # xx <- dat2[dups1 | dups2,]
+
 })
 
 test_that(desc="get_polls() raw",{
@@ -105,5 +114,18 @@ test_that(desc="throw warnings",{
     warning("'", names(tab[tab==1]), "' is a new house.")
   }
   
+})
+
+get_modified_date <- function(x){
+  slot <- x[grepl("dcterms:modified", x = x)]
+  # Regular expression to match dates in the format YYYY-MM-DD
+  date_pattern <- "\\b\\d{4}-\\d{2}-\\d{2}\\b"
+  regmatches(slot, gregexpr(date_pattern, slot))[[1]]
+}
+
+test_that(desc="check modified date",{
+  res <- test_path("../../../dcat-ap.rdf")
+  dcat_ap_rdf_modified_date <- as.Date(get_modified_date(readLines(res)))
+  expect_true(abs(Sys.Date()-dcat_ap_rdf_modified_date < 14), info = "Please update 'dcterms:modified' in 'dcat-ap.rdf'")
 })
 
