@@ -52,7 +52,7 @@ test_that(desc="get_polls()",{
   ddat <- ddat0[rowSums(is.na(ddat0))==0,]
   dups1 <- duplicated(ddat)
   dups2 <- duplicated(ddat,fromLast = TRUE)
-  expect_true(!any(dups))
+  expect_true(!any(dups1))
   # dat2 <- dat[rowSums(is.na(ddat0))==0,]
   # xx <- dat2[dups1 | dups2,]
 
