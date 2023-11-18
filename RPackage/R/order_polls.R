@@ -31,3 +31,9 @@ publyearmonth_to_yyyymm <- function(x){
   paste0(substr(x,1,4),moint)
 }
 
+publyearmonth_to_date <- function(x){
+  x <- publyearmonth_to_yyyymm(x)
+  as.Date(paste0(x, "01"), format = "%Y%m%d")
+}
+
+
