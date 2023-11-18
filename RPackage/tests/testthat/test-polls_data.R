@@ -116,16 +116,10 @@ test_that(desc="throw warnings",{
   
 })
 
-get_modified_date <- function(x){
-  slot <- x[grepl("dcterms:modified", x = x)]
-  # Regular expression to match dates in the format YYYY-MM-DD
-  date_pattern <- "\\b\\d{4}-\\d{2}-\\d{2}\\b"
-  regmatches(slot, gregexpr(date_pattern, slot))[[1]]
-}
+
 
 test_that(desc="check modified date",{
-  res <- test_path("../../../dcat-ap.rdf")
-  dcat_ap_rdf_modified_date <- as.Date(get_modified_date(readLines(res)))
+  dcat_ap_rdf_modified_date <- get_dcat_ap_rdf_modified_date()
   expect_true(abs(Sys.Date()-dcat_ap_rdf_modified_date < 14), info = "Please update 'dcterms:modified' in 'dcat-ap.rdf'")
 })
 
