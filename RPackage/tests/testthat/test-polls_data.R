@@ -121,6 +121,7 @@ test_that(desc="check modified date",{
   SwedishPolls:::find_file_by_traversing(file_to_find = "dcat-ap.rdf")
   dcat_ap_rdf_modified_date <- suppressWarnings(SwedishPolls:::get_dcat_ap_rdf_modified_date())
   if(is.null(dcat_ap_rdf_modified_date)) skip()
-  expect_true(abs(as.integer(Sys.Date()-dcat_ap_rdf_modified_date)) < 14, info = "Please update 'dcterms:modified' in 'dcat-ap.rdf'")
+  expect_true(abs(as.integer(Sys.Date()-dcat_ap_rdf_modified_date)) < 14, 
+              label = "'dcterms:modified' element in '/dcat-ap.rdf' file is not updated, i.e. the statement 'modified date is within the last two weeks'")
 })
 
