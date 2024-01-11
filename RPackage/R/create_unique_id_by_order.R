@@ -32,6 +32,7 @@ create_unique_id_by_order <- function(x, use_colnames = c("PublYearMonth", "Comp
   
   tab <- table(x$tmp_id)
   tmpdf <- data.frame(tmp_id = names(tab), total = as.vector(tab))
+  tmpdf$total <- as.character(tmpdf$total)
   x <- merge(x, tmpdf)
   
   x$no <- as.character(no)  
