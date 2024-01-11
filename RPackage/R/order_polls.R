@@ -36,4 +36,10 @@ publyearmonth_to_date <- function(x){
   as.Date(paste0(x, "01"), format = "%Y%m%d")
 }
 
+date_to_publyearmonth <- function(x){
+  checkmate::assert_date(x)
+  chrdate <- as.character(x)
+  mas <- months_abb_swe()
+  paste0(substr(chrdate,1,5), mas[as.integer(substr(x,6,7))])
+}
 
