@@ -9,7 +9,7 @@ create_unique_id_by_order(x, use_colnames = c("PublYearMonth", "Company"))
 \arguments{
 \item{x}{a polls data.frame}
 
-\item{use_columns}{which columns should be used to create the unique ID}
+\item{use_colnames}{which columns should be used to create the unique ID}
 }
 \description{
 The function create a unique ID per poll based on the columns chosen.

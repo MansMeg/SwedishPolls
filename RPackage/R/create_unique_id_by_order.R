@@ -6,7 +6,7 @@
 #' order and total polls in \code{x}.
 #' 
 #' @param x a polls data.frame
-#' @param use_columns which columns should be used to create the unique ID
+#' @param use_colnames which columns should be used to create the unique ID
 #' 
 #' 
 create_unique_id_by_order <- function(x, use_colnames = c("PublYearMonth", "Company")){
