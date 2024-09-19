@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2024-sep,Ipsos,19,3,5,4,31,9,7,21,NA,NA,1595,2024-09-17,2024-09-03,2024-09-15,FALSE,Ipsos
 2024-sep,Demoskop,19.7,3.4,3.7,2.9,32.8,8.9,6.2,19.9,NA,NA,2544,2024-09-12,2024-08-24,2024-09-09,FALSE,Demoskop
 2024-sep,Sifo,20.3,3.2,5.0,3.2,33.0,8.7,5.9,18.7,NA,NA,3176,2024-09-12,2024-08-26,2024-09-08,FALSE,Sifo
 2024-sep,Sentio,17.3,3.8,5.0,4.9,32.1,8.1,5.4,21.6,NA,NA,783,2024-09-11,2024-09-05,2024-09-09,FALSE,Sentio
