@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2024-dec,Demoskop,19.2,2.7,4.6,3.5,32.6,7.9,7.4,20.2,NA,NA,2489,2024-12-12,2024-11-23,2024-12-09,FALSE,Demoskop
 2024-dec,Sifo,19.0,3.3,4.7,3.8,33.3,7.9,6.7,19.3,NA,NA,3226,2024-12-12,2024-11-25,2024-12-08,FALSE,Sifo
 2024-nov,Indikator,20.7,3.4,4.6,3.2,33.6,7.4,6.4,19.3,NA,NA,2718,2024-11-28,2024-10-29,2024-11-25,FALSE,Indikator
 2024-nov,Sentio,18.7,4.3,3.6,3.9,31.5,8.8,6.5,21.1,NA,NA,763,2024-11-22,2024-11-14,2024-11-20,FALSE,Sentio
