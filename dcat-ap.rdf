@@ -7,7 +7,7 @@
     xmlns:dcat="http://www.w3.org/ns/dcat#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <dcat:Catalog rdf:about="https://github.com/MansMeg/SwedishPolls">
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-15</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-24</dcterms:modified>
         <dcterms:title xml:lang="sv">Svenska Opinionsundersökningar</dcterms:title>
         <dcterms:description xml:lang="sv">Svenska valundersökningar från 1968 till idag</dcterms:description>
         <dcterms:title xml:lang="en">Swedish Polls</dcterms:title>
