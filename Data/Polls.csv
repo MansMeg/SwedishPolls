@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2025-nov,Indikator,18.1,2.2,4.3,5.4,36.3,6.2,5.2,20.3,NA,NA,2690,2025-11-27,2025-11-05,2025-11-24,FALSE,Indikator
 2025-nov,Sentio,18.8,1.9,4.0,3.2,33.0,7.3,5.4,24.0,NA,NA,779,2025-11-21,2025-11-13,2025-11-19,FALSE,Sentio
 2025-nov,Ipsos,17,2,5,4,36,8,6,21,NA,NA,1755,2025-11-19,2025-11-04,2025-11-17,FALSE,Ipsos
 2025-nov,Novus,19.4,2.2,5.1,3.7,34.3,6.3,5.4,21.0,NA,NA,2314,2025-11-19,2025-11-03,2025-11-16,FALSE,Novus
