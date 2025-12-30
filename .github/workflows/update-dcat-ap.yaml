@@ -16,12 +16,21 @@ jobs:
   update-modified-date:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout PR head
+      - name: Checkout PR head (same repo)
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Checkout PR head (fork or default)
+        if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
 
       - name: Update modified date in dcat-ap.rdf
         run: |
