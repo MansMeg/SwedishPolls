@@ -25,11 +25,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Checkout PR head (fork or default)
+      - name: Checkout PR ref (fork or missing head branch)
         if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Update modified date in dcat-ap.rdf
