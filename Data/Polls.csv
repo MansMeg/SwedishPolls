@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2026-maj,Sifo,17.2,2.0,5.5,5.1,32.5,7.9,7.9,18.9,NA,NA,2991,2026-05-14,2026-04-27,2026-05-10,FALSE,Sifo
 2026-apr,Demoskop,16.5,4.0,5.9,4.8,33.2,7.1,7.2,19.9,NA,NA,2701,2026-04-30,2026-04-10,2026-04-24,FALSE,Demoskop
 2026-apr,Indikator,18.3,2.4,6.4,5.0,33.6,7.2,5.7,19.4,NA,NA,1842,2026-04-29,2026-04-01,2026-04-27,FALSE,Indikator
 2026-apr,Ipsos,19,2,6,5,32,9,7,19,NA,NA,1603,2026-04-28,2026-04-14,2026-04-27,FALSE,Ipsos
