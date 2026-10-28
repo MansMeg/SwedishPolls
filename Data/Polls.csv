@@ -1,4 +1,5 @@
 PublYearMonth,Company,M,L,C,KD,S,V,MP,SD,FI,Uncertain,n,PublDate,collectPeriodFrom,collectPeriodTo,approxPeriod,house
+2026-okt,Ipsos,24,4,6,5,27,8,6,19,NA,NA,NA,2026-10-27,2026-10-13,2026-10-25,FALSE,Ipsos
 2026-okt,Novus,23.9,3.9,6.7,6.4,25.9,7.2,6.5,18.0,NA,NA,2512,2026-10-14,2026-10-05,2026-10-11,FALSE,Novus
 2026-okt,Sifo,22.3,3.7,6.3,5.9,28.5,7.8,7.1,17.2,NA,NA,3000,2026-10-14,2026-09-28,2026-10-11,FALSE,Sifo
 2026-sep,Ipsos,22,4,7,6,28,8,6,17,NA,NA,1694,2026-09-29,2026-09-15,2026-09-27,FALSE,Ipsos
